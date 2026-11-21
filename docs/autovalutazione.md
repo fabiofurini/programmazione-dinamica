@@ -1,0 +1,13 @@
+---
+title: Autovalutazione
+hide:
+  - toc
+---
+
+# Autovalutazione
+
+Un **facsimile d'esame** nuovo a ogni avvio, con lo schema degli scritti a quiz: 13 domande, 33 punti, prese da tutte le parti del corso. Alla fine il punteggio, il risultato parte per parte, la risposta giusta di ogni domanda, la spiegazione e il link alla sezione delle dispense.
+
+<div id="quiz-app" class="quiz-app" data-modulo="dynamic-programming" data-lang="it" data-capitoli="{&quot;dp-principles&quot;: &quot;1. Principi della programmazione dinamica&quot;, &quot;dp-knapsack&quot;: &quot;2. PD per il problema dello zaino 0/1&quot;, &quot;dp-unbounded-knapsack&quot;: &quot;3. PD per il problema dello zaino illimitato&quot;, &quot;dp-bounded-knapsack&quot;: &quot;4. PD per il problema dello zaino limitato&quot;, &quot;dp-subset-sum&quot;: &quot;5. PD per il problema del subset sum&quot;, &quot;dp-multiple-choice-knapsack&quot;: &quot;6. PD per il problema dello zaino a scelta multipla&quot;, &quot;dp-multidimensional-knapsack&quot;: &quot;7. PD per il problema dello zaino multidimensionale&quot;, &quot;dp-knapsack-setups&quot;: &quot;8. PD per il problema dello zaino con setup&quot;, &quot;dp-multiple-knapsack&quot;: &quot;9. PD per il problema degli zaini multipli&quot;, &quot;dp-lot-sizing&quot;: &quot;10. PD per il problema del lot sizing senza capacità&quot;, &quot;dp-capacitated-lot-sizing&quot;: &quot;11. PD per il problema del lot sizing capacitato&quot;, &quot;dp-coin-change&quot;: &quot;12. PD per il problema del cambio monete&quot;, &quot;dp-rod-cutting&quot;: &quot;13. PD per il problema del taglio delle aste&quot;}" data-parti="{&quot;dp-principles&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-knapsack&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-unbounded-knapsack&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-bounded-knapsack&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-subset-sum&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-multiple-choice-knapsack&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-multidimensional-knapsack&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-knapsack-setups&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-multiple-knapsack&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-lot-sizing&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-capacitated-lot-sizing&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-coin-change&quot;: &quot;Programmazione dinamica&quot;, &quot;dp-rod-cutting&quot;: &quot;Programmazione dinamica&quot;}"></div>
+
+<noscript>Per l'autovalutazione serve JavaScript.</noscript>

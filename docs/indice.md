@@ -1,5 +1,40 @@
 # Indice completo
 
+<!-- collana-organizzazione -->
+## Come usare queste dispense
+
+- **Sito e PDF.** Ogni capitolo del sito è un capitolo della dispensa, con gli stessi numeri e gli stessi colori; i capitoli lunghi sono divisi in una pagina per sezione.
+- **In testa a ogni capitolo** la barra con la parte, il PDF della dispensa, le slide, gli esercizi e le app del capitolo; in fondo, il link agli esercizi.
+- **I problemi.** La definizione di ogni problema sta nella sua pagina del corso [Ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/): ogni capitolo comincia con il link.
+
+I box hanno gli stessi colori della dispensa:
+
+<div class="grid" markdown>
+
+!!! definizione "Definizione"
+    Il significato preciso di un concetto nuovo.
+
+!!! teorema "Teorema, proposizione, osservazione"
+    Un risultato da ricordare, con le sue ipotesi.
+
+!!! esempio "Esempio"
+    Un calcolo svolto per intero, un passo alla volta.
+
+!!! formula "Formula"
+    In rosa le formule da avere sempre sotto mano: le ricorrenze della programmazione dinamica.
+
+!!! algoritmo "Algoritmo"
+    Lo pseudocodice, passo per passo come nella dispensa.
+
+!!! chiave ""
+    **In verde** il punto chiave da portare a casa.
+
+</div>
+
+??? dimostrazione "Dimostrazione: si apre con un clic"
+    Le dimostrazioni ci sono tutte, ma chiuse: prima leggi l'enunciato, poi apri la dimostrazione quando vuoi studiarla. Lo stesso vale per le soluzioni degli esercizi.
+<!-- /collana-organizzazione -->
+
 Tutte le pagine del sito, nell'ordine del menu: i capitoli con le loro sezioni e le altre pagine.
 
 ## [Principi](principi.md)
@@ -84,3 +119,4 @@ Tutte le pagine del sito, nell'ordine del menu: i capitoli con le loro sezioni e
 - [Esercizi](esercizi/index.md)
 - [Laboratorio](laboratorio/index.md)
 - [Materiale](materiale.md)
+- [Autovalutazione](autovalutazione.md)

@@ -9,6 +9,10 @@ hide:
 
 # Programmazione dinamica
 
+<!-- collana-riga -->
+<p class="collana-riga" markdown>Un corso della collana <b>Ricerca Operativa e Matematica</b> · [tutti i corsi](#la-collana)</p>
+<!-- /collana-riga -->
+
 Materiale didattico ideato e sviluppato da **[Fabio Furini](https://fabiofurini.github.io/)**, professore
 associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
 
@@ -16,11 +20,23 @@ associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma
 
 Prerequisiti: [Ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/) per i problemi e [Algoritmi](https://fabiofurini.github.io/algoritmi/) per lo pseudocodice, la ricorsione e l'analisi degli algoritmi.
 
-[:material-school: Studia il corso](dp-principles/index.md){ .md-button .md-button--primary }
-[:material-pencil: Esercitati](esercizi/index.md){ .md-button }
-[:material-download: Il materiale](materiale.md){ .md-button }
+[Comincia :material-arrow-right:](dp-principles/index.md){ .md-button .md-button--primary }
+[:material-pencil: Esercizi](esercizi/index.md){ .md-button }
+[:material-gesture-tap: Laboratorio](laboratorio/index.md){ .md-button }
+[:material-clipboard-check-outline: Quiz](autovalutazione.md){ .md-button }
+[:material-download: Materiale](materiale.md){ .md-button }
 
 </div>
+
+<!-- collana-app -->
+## Provalo subito
+
+La tabella della programmazione dinamica per lo zaino: si riempie una cella alla volta, con le celle da cui dipende, poi si ricostruisce la soluzione.
+
+<div class="gi" data-grafico="oc-dp-knapsack"></div>
+
+[:material-gesture-tap: Altre app nel laboratorio](laboratorio/index.md){ .md-button }
+<!-- /collana-app -->
 
 ## Le parti del corso
 
@@ -68,6 +84,16 @@ Le stesse voci del menu: ogni scheda dice a quale parte e a quali capitoli della
 
     [:octicons-arrow-right-24: I capitoli](problemi-misti.md)
 
+-   :material-clipboard-check-outline: **Autovalutazione**
+
+    ---
+
+    *Facsimile d'esame*
+
+    Un facsimile nuovo a ogni avvio: 13 domande, 33 punti, con la soluzione e il link alle dispense.
+
+    [:octicons-arrow-right-24: Mettiti alla prova](autovalutazione.md)
+
 -   :material-gesture-tap: **Laboratorio**
 
     ---
@@ -80,38 +106,109 @@ Le stesse voci del menu: ogni scheda dice a quale parte e a quali capitoli della
 
 </div>
 
-## Come usare queste dispense
+<!-- collana-da-non-perdere -->
+## Da non perdere
 
-- **Sito e PDF.** Ogni capitolo del sito è un capitolo della dispensa, con gli stessi numeri e gli stessi colori; i capitoli lunghi sono divisi in una pagina per sezione.
-- **In testa a ogni capitolo** la barra con la parte, il PDF della dispensa, le slide, gli esercizi e le app del capitolo; in fondo, il link agli esercizi.
-- **I problemi.** La definizione di ogni problema sta nella sua pagina del corso [Ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/): ogni capitolo comincia con il link.
+<div class="grid cards" markdown>
 
-I box hanno gli stessi colori della dispensa:
+-   :material-pencil-box-multiple: **Esercizi con le soluzioni**
 
-<div class="grid" markdown>
+    ---
 
-!!! definizione "Definizione"
-    Il significato preciso di un concetto nuovo.
+    Esercizi per ogni capitolo, ciascuno con la soluzione svolta che si apre con un clic.
 
-!!! teorema "Teorema, proposizione, osservazione"
-    Un risultato da ricordare, con le sue ipotesi.
+    [:octicons-arrow-right-24: Gli esercizi](esercizi/index.md)
 
-!!! esempio "Esempio"
-    Un calcolo svolto per intero, un passo alla volta.
+-   :material-clipboard-check-outline: **Quiz di autovalutazione**
 
-!!! formula "Formula"
-    In rosa le formule da avere sempre sotto mano: le ricorrenze della programmazione dinamica.
+    ---
 
-!!! algoritmo "Algoritmo"
-    Lo pseudocodice, passo per passo come nella dispensa.
+    Un facsimile d'esame nuovo a ogni avvio: 13 domande, 33 punti, con la soluzione e il link alle dispense. In Materiale c'è anche la banca completa delle domande.
 
-!!! chiave ""
-    **In verde** il punto chiave da portare a casa.
+    [:octicons-arrow-right-24: Mettiti alla prova](autovalutazione.md)
+
+-   :material-gesture-tap: **Laboratorio interattivo**
+
+    ---
+
+    App che girano nel browser: muovi i parametri e guarda le idee del corso lavorare, un passo alla volta.
+
+    [:octicons-arrow-right-24: Il laboratorio](laboratorio/index.md)
+
+-   :material-download: **Dispense in PDF**
+
+    ---
+
+    Dispense, eserciziari e slide in PDF, con la stessa numerazione del sito.
+
+    [:octicons-arrow-right-24: Il materiale](materiale.md)
+
+-   :material-format-list-numbered: **Indice completo**
+
+    ---
+
+    Tutti i capitoli con le loro sezioni in una pagina, e come è fatto ogni capitolo.
+
+    [:octicons-arrow-right-24: L'indice](indice.md)
 
 </div>
+<!-- /collana-da-non-perdere -->
 
-??? dimostrazione "Dimostrazione: si apre con un clic"
-    Le dimostrazioni ci sono tutte, ma chiuse: prima leggi l'enunciato, poi apri la dimostrazione quando vuoi studiarla. Lo stesso vale per le soluzioni degli esercizi.
+---
+
+<!-- collana -->
+## La collana
+
+Dieci corsi con la stessa impostazione: dispense online e in PDF, esercizi con le soluzioni, laboratorio interattivo e quiz di autovalutazione.
+
+<div class="grid cards" markdown>
+
+-   :material-function-variant: **[Analisi Matematica 1](https://fabiofurini.github.io/analisi-matematica-1/)**
+
+    numeri reali, funzioni, limiti, derivate e serie, con i grafici interattivi
+
+-   :material-matrix: **[Algebra lineare](https://fabiofurini.github.io/algebra-lineare/)**
+
+    vettori, matrici, determinanti, sistemi lineari e autovalori, con il laboratorio di calcolo
+
+-   :material-code-braces: **[Algoritmi](https://fabiofurini.github.io/algoritmi/)**
+
+    rappresentazione dei numeri, pseudocodice, ordinamento e ricerca, analisi e algoritmi ricorsivi
+
+-   :material-vector-triangle: **[Programmazione lineare](https://fabiofurini.github.io/programmazione-lineare/)**
+
+    poliedri, algoritmo del simplesso, dualità e simplesso duale, con il laboratorio interattivo
+
+-   :material-dots-grid: **[Programmazione lineare intera](https://fabiofurini.github.io/programmazione-lineare-intera/)**
+
+    rilassamento continuo, disuguaglianze valide, piani di taglio, branch-and-bound e branch-and-cut
+
+-   :material-vector-curve: **[Ottimizzazione convessa](https://fabiofurini.github.io/ottimizzazione-convessa/)**
+
+    insiemi e funzioni convesse, problemi di ottimizzazione convessa, con grafici interattivi
+
+-   :material-graph-outline: **[Ottimizzazione su reti](https://fabiofurini.github.io/ottimizzazione-su-reti/)**
+
+    grafi, alberi ricoprenti, cammini minimi, flussi su reti, simplesso su reti e gestione dei progetti
+
+-   :material-hexagon-multiple-outline: **[Ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/)**
+
+    zaino, bin packing, colorazione, TSP, scheduling e lot sizing, risolti in tutti i modi
+
+-   :material-table-large: **Programmazione dinamica** · *questo corso*
+
+    principi e algoritmi di PD per zaino, lot sizing, cambio monete e taglio delle aste
+
+-   :material-vector-polygon: **[Modellazione MIP](https://fabiofurini.github.io/modellazione-mip/)**
+
+    modelli di programmazione lineare a variabili intere, dalla formulazione alla soluzione con i solver
+
+-   :material-chart-timeline-variant: **[Laboratorio di Ricerca Operativa](https://fabiofurini.github.io/laboratorio-ricerca-operativa/)**
+
+    modellazione e risoluzione di problemi di ottimizzazione con Python e i solver
+
+</div>
+<!-- /collana -->
 
 ---
 
