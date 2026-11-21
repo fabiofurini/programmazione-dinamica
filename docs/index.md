@@ -31,9 +31,9 @@ Prerequisiti: [Problemi di ottimizzazione combinatoria](https://fabiofurini.gith
 <!-- collana-app -->
 ## Provalo subito
 
-La tabella della programmazione dinamica per lo zaino: si riempie una cella alla volta, con le celle da cui dipende, poi si ricostruisce la soluzione.
+La tabella della programmazione dinamica per lo zaino 0/1, già piena: ogni cella è il miglior profitto con i primi j oggetti e capacità k, e il percorso verde ricostruisce la soluzione. Premi «Esegui» per vederla riempirsi una cella alla volta.
 
-<div class="gi" data-grafico="oc-dp-knapsack"></div>
+<div class="gi" data-grafico="oc-dp-knapsack" data-vetrina="4 | 1"></div>
 
 [:material-gesture-tap: Altre app nel laboratorio](laboratorio/index.md){ .md-button }
 <!-- /collana-app -->

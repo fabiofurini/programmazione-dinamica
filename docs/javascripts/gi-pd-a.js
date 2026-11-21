@@ -186,6 +186,12 @@
         (i) => nuova(dpCopia(DP_ES[st.chiave()][i]), i));
       osservaDimensioni(board, st);
       daIndirizzo(st);
+      // home della collana: data-vetrina="istanza | istanza per il telefono" (numeri del menu, da 1), tabella completa
+      O.vetrina(st, (v) => {
+        const due = v.split("|"), i = +((st.el.clientWidth < 600 && due[1]) || due[0]) - 1, tp = st.chiave();
+        if (DP_ES[tp][i]) { D.istDP[tp] = Object.assign(dpCopia(DP_ES[tp][i]), { id: nuovoId(), es: i }); if (D.menu) D.menu.value = String(i); }
+        O.vaiAlPasso(st, null);
+      });
     },
     aggiorna(board, st) {
       const S = dpStato(st), C = M.COL(st), [W, H] = dim(board), { I, R, k, cur, t, tipo } = S, n = I.w.length, c = I.c;

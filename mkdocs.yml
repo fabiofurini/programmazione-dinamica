@@ -136,8 +136,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
   - javascripts/interattivi.js?v=39321dc727
   - javascripts/gi-comune.js?v=40df75e3e5
-  - javascripts/gi-pd-0.js?v=af4db0e638
-  - javascripts/gi-pd-a.js?v=c424ab70bc
+  - javascripts/gi-pd-0.js?v=49732ed445
+  - javascripts/gi-pd-a.js?v=cdd97906a5
   - javascripts/gi-pd-b.js?v=9e0e682b74
   - javascripts/quiz.js?v=be7fae2b85
 
