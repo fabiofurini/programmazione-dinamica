@@ -7470,6 +7470,1986 @@
     ],
     "spiegazione": "$4$ types times $4$ positive capacities: $16$ updates, $\\Theta(n^2)$ as the first DP."
    }
+  },
+  {
+   "id": "dp-f-250",
+   "livello": "teorema",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#sez-sec-dp-properties",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#sez-sec-dp-properties"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un problema ha la sottostruttura ottima e i sottoproblemi sovrapposti. Che cosa garantisce un algoritmo di programmazione dinamica (PD) basato su una ricorrenza corretta?",
+    "opzioni": [
+     "Una soluzione ottima in tempo polinomiale nell'input",
+     "Una soluzione con rapporto di approssimazione garantito",
+     "Ogni sottoproblema risolto tante volte quante compare",
+     "Una soluzione ottima, con ogni sottoproblema risolto una volta sola"
+    ],
+    "spiegazione": "La sottostruttura ottima rende esatta la ricorrenza; la tabella evita di ricalcolare i sottoproblemi. Il tempo può essere solo pseudo-polinomiale."
+   },
+   "en": {
+    "testo": "A problem has optimal substructure and overlapping subproblems. What does a dynamic programming (DP) algorithm based on a correct recurrence guarantee?",
+    "opzioni": [
+     "An optimal solution in time polynomial in the input",
+     "A solution with a guaranteed approximation ratio",
+     "Each subproblem solved as many times as it appears",
+     "An optimal solution, with each subproblem solved only once"
+    ],
+    "spiegazione": "Optimal substructure makes the recurrence exact; the table avoids recomputing the subproblems. The running time may be only pseudo-polynomial."
+   }
+  },
+  {
+   "id": "dp-f-251",
+   "livello": "ipotesi",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#sez-sec-dp-properties",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#sez-sec-dp-properties"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "In programmazione dinamica (PD), quale proprietà del problema rende corretta la ricorrenza, cioè fa sì che dia il valore ottimo?",
+    "opzioni": [
+     "I dati interi e positivi",
+     "Un numero polinomiale di sottoproblemi",
+     "La sottostruttura ottima",
+     "I sottoproblemi sovrapposti"
+    ],
+    "spiegazione": "Con la sottostruttura ottima una soluzione ottima si compone di soluzioni ottime dei sottoproblemi. I sottoproblemi sovrapposti rendono utile la tabella, non corretta la ricorrenza."
+   },
+   "en": {
+    "testo": "In dynamic programming (DP), which property of the problem makes the recurrence correct, that is, makes it give the optimal value?",
+    "opzioni": [
+     "Integer positive data",
+     "A polynomial number of subproblems",
+     "Optimal substructure",
+     "Overlapping subproblems"
+    ],
+    "spiegazione": "With optimal substructure an optimal solution is made of optimal solutions of subproblems. Overlapping subproblems make the table useful, not the recurrence correct."
+   }
+  },
+  {
+   "id": "dp-f-252",
+   "livello": "ipotesi",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#sez-sec-dp-properties",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#sez-sec-dp-properties"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "In programmazione dinamica (PD), quale proprietà rende conveniente memorizzare i valori dei sottoproblemi in una tabella?",
+    "opzioni": [
+     "L'unicità della soluzione ottima",
+     "I sottoproblemi sovrapposti",
+     "La sottostruttura ottima",
+     "La linearità dell'obiettivo"
+    ],
+    "spiegazione": "Se uno stesso sottoproblema compare più volte nella ricorsione, la tabella evita di ricalcolarlo."
+   },
+   "en": {
+    "testo": "In dynamic programming (DP), which property makes it worth storing the values of the subproblems in a table?",
+    "opzioni": [
+     "A unique optimal solution",
+     "Overlapping subproblems",
+     "Optimal substructure",
+     "A linear objective"
+    ],
+    "spiegazione": "If the same subproblem appears several times in the recursion, the table avoids computing it again."
+   }
+  },
+  {
+   "id": "dp-f-253",
+   "livello": "ipotesi",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#13-passi-per-progettare-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#13-steps-for-designing-a-dp-algorithm"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Nell'approccio bottom-up della programmazione dinamica, quale condizione deve rispettare l'ordine in cui si riempie la tabella?",
+    "opzioni": [
+     "Ogni valore viene dopo i valori da cui dipende",
+     "I valori vanno in ordine decrescente",
+     "I casi base si calcolano per ultimi",
+     "Nessuna: l'ordine è indifferente"
+    ],
+    "spiegazione": "La ricorrenza usa valori di sottoproblemi più piccoli: devono essere già nella tabella quando servono."
+   },
+   "en": {
+    "testo": "In the bottom-up approach of dynamic programming, which condition must the order of filling the table satisfy?",
+    "opzioni": [
+     "Each value comes after the values it depends on",
+     "The values come in decreasing order",
+     "The base cases are computed last",
+     "None: the order does not matter"
+    ],
+    "spiegazione": "The recurrence uses values of smaller subproblems: they must already be in the table when needed."
+   }
+  },
+  {
+   "id": "dp-f-254",
+   "livello": "teorema",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#13-passi-per-progettare-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#13-steps-for-designing-a-dp-algorithm"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un algoritmo di PD ha $S$ sottoproblemi distinti e calcola ciascuno confrontando al più $d$ valori già noti, ognuno in tempo costante. Quanti passi esegue per riempire la tabella?",
+    "opzioni": [
+     "$O(S+d)$",
+     "$O(S^{d})$",
+     "$O(d^{S})$",
+     "$O(S\\,d)$"
+    ],
+    "spiegazione": "Ogni sottoproblema si calcola una volta, con $O(d)$ passi: in tutto $O(S\\,d)$."
+   },
+   "en": {
+    "testo": "A DP algorithm has $S$ distinct subproblems and computes each one by comparing at most $d$ known values, each in constant time. How many steps does it execute to fill the table?",
+    "opzioni": [
+     "$O(S+d)$",
+     "$O(S^{d})$",
+     "$O(d^{S})$",
+     "$O(S\\,d)$"
+    ],
+    "spiegazione": "Each subproblem is computed once, with $O(d)$ steps: $O(S\\,d)$ in total."
+   }
+  },
+  {
+   "id": "dp-f-255",
+   "livello": "teorema",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#11-dividere-conquistare-combinare",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#11-divide-conquer-and-combine"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che cosa distingue la programmazione dinamica (PD) dal semplice approccio ricorsivo «dividi e conquista»?",
+    "opzioni": [
+     "La PD trova solo soluzioni approssimate",
+     "La PD non usa ricorrenze né casi base",
+     "La PD memorizza i valori e non li ricalcola",
+     "La PD usa sottoproblemi di tipo diverso"
+    ],
+    "spiegazione": "Entrambi dividono in sottoproblemi dello stesso tipo; la PD salva i valori in una tabella e risolve ogni sottoproblema una volta sola."
+   },
+   "en": {
+    "testo": "What distinguishes dynamic programming (DP) from the plain recursive «divide and conquer» approach?",
+    "opzioni": [
+     "DP finds only approximate solutions",
+     "DP uses neither recurrences nor base cases",
+     "DP stores the values and does not recompute them",
+     "DP uses subproblems of a different type"
+    ],
+    "spiegazione": "Both divide into subproblems of the same type; DP stores the values in a table and solves each subproblem once."
+   }
+  },
+  {
+   "id": "dp-f-256",
+   "livello": "ipotesi",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#13-passi-per-progettare-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#13-steps-for-designing-a-dp-algorithm"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nel progetto di un algoritmo di PD, a che cosa servono i casi base della ricorrenza?",
+    "opzioni": [
+     "Eliminano i sottoproblemi sovrapposti",
+     "Danno i valori dei sottoproblemi più piccoli, da cui partono tutti gli altri",
+     "Danno direttamente la soluzione ottima del problema",
+     "Servono solo nell'approccio top-down"
+    ],
+    "spiegazione": "Senza casi base la ricorrenza non si chiude: i loro valori sono noti senza ricorsione e da essi si calcolano tutti gli altri."
+   },
+   "en": {
+    "testo": "In the design of a DP algorithm, what are the base cases of the recurrence for?",
+    "opzioni": [
+     "They remove the overlapping subproblems",
+     "They give the values of the smallest subproblems, from which all others start",
+     "They give the optimal solution of the problem directly",
+     "They are needed only in the top-down approach"
+    ],
+    "spiegazione": "Without base cases the recurrence does not close: their values are known without recursion and all others are computed from them."
+   }
+  },
+  {
+   "id": "dp-f-257",
+   "livello": "teorema",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#13-passi-per-progettare-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#13-steps-for-designing-a-dp-algorithm"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "In un algoritmo di PD il valore ottimo si calcola con la ricorrenza (passo 1). Come si ottiene una soluzione ottima (passo 2)?",
+    "opzioni": [
+     "Si memorizza la scelta fatta in ogni cella e si ripercorre all'indietro",
+     "Si risolve di nuovo il problema con un solver PLI",
+     "Si prende la cella di valore massimo di ogni riga",
+     "Si ordina la tabella per valori decrescenti"
+    ],
+    "spiegazione": "Una tabella aggiuntiva registra quale termine della ricorrenza ha dato il valore: leggendola a ritroso dall'ultima cella si ricostruisce una soluzione."
+   },
+   "en": {
+    "testo": "In a DP algorithm the optimal value is computed by the recurrence (step 1). How is an optimal solution obtained (step 2)?",
+    "opzioni": [
+     "The choice made in each cell is stored and traced backwards",
+     "The problem is solved again with an ILP solver",
+     "The cell of maximum value of each row is taken",
+     "The table is sorted by decreasing values"
+    ],
+    "spiegazione": "An additional table records which term of the recurrence gave the value: reading it backwards from the last cell rebuilds a solution."
+   }
+  },
+  {
+   "id": "dp-f-258",
+   "livello": "ipotesi",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-primo-algoritmo-di-pd/#221-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-first-dp-algorithm/#221-number-of-steps"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "La PD per lo zaino 0/1 (KP) usa i valori $v(j,k)$ per le capacità $k=0,1,\\dots,c$. Quale ipotesi sui dati serve?",
+    "opzioni": [
+     "Pesi $w_j$ tutti diversi",
+     "Pesi $w_j$ e capacità $c$ interi",
+     "Profitti $p_j$ interi",
+     "Oggetti ordinati per efficienza"
+    ],
+    "spiegazione": "Gli indici $k$ sono le capacità residue $0,1,\\dots,c$: servono pesi e capacità interi; i profitti possono essere qualunque."
+   },
+   "en": {
+    "testo": "The DP for the 0/1 knapsack problem (KP) uses the values $v(j,k)$ for the capacities $k=0,1,\\dots,c$. Which hypothesis on the data is needed?",
+    "opzioni": [
+     "Pairwise distinct weights $w_j$",
+     "Integer weights $w_j$ and capacity $c$",
+     "Integer profits $p_j$",
+     "Items sorted by efficiency"
+    ],
+    "spiegazione": "The indices $k$ are the residual capacities $0,1,\\dots,c$: integer weights and capacity are needed; profits can be arbitrary."
+   }
+  },
+  {
+   "id": "dp-f-259",
+   "livello": "teorema",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-primo-algoritmo-di-pd/#221-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-first-dp-algorithm/#221-number-of-steps"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "La PD per lo zaino 0/1 esegue $\\Theta(nc)$ passi. Perché questo tempo non è polinomiale nella dimensione dell'input?",
+    "opzioni": [
+     "$c$ si scrive con $O(\\log c)$ bit e il tempo cresce con il valore $c$",
+     "Perché la tabella ha $2^n$ celle",
+     "Perché ogni cella richiede $\\Theta(n)$ confronti",
+     "Perché $n$ non è noto a priori"
+    ],
+    "spiegazione": "Un tempo proporzionale al valore $c$ è esponenziale nella sua lunghezza in bit: è pseudo-polinomiale."
+   },
+   "en": {
+    "testo": "The DP for the 0/1 knapsack executes $\\Theta(nc)$ steps. Why is this time not polynomial in the input size?",
+    "opzioni": [
+     "$c$ is written with $O(\\log c)$ bits and the time grows with the value $c$",
+     "Because the table has $2^n$ cells",
+     "Because each cell needs $\\Theta(n)$ comparisons",
+     "Because $n$ is not known in advance"
+    ],
+    "spiegazione": "A time proportional to the value $c$ is exponential in its length in bits: it is pseudo-polynomial."
+   }
+  },
+  {
+   "id": "dp-f-260",
+   "livello": "teorema",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-primo-algoritmo-di-pd/#221-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-first-dp-algorithm/#221-number-of-steps"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella PD per lo zaino 0/1 con un solo vettore di $c+1$ celle, le capacità $k$ si scorrono dall'alto verso il basso. Perché?",
+    "opzioni": [
+     "Così si dimezzano i confronti",
+     "Così l'oggetto $j$ si può usare più volte",
+     "Perché le capacità piccole non servono",
+     "Così $v(k-w_j)$ è ancora il valore senza l'oggetto $j$"
+    ],
+    "spiegazione": "La cella $k-w_j$ non è ancora aggiornata: l'oggetto $j$ si usa al più una volta. Scorrendo verso l'alto si avrebbe lo zaino illimitato."
+   },
+   "en": {
+    "testo": "In the DP for the 0/1 knapsack with a single vector of $c+1$ cells, the capacities $k$ are scanned downwards. Why?",
+    "opzioni": [
+     "So the comparisons are halved",
+     "So item $j$ can be used several times",
+     "Because small capacities are not needed",
+     "So $v(k-w_j)$ is still the value without item $j$"
+    ],
+    "spiegazione": "Cell $k-w_j$ is not updated yet: item $j$ is used at most once. Scanning upwards would give the unbounded knapsack."
+   }
+  },
+  {
+   "id": "dp-f-261",
+   "livello": "ipotesi",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-secondo-algoritmo-di-pd/#231-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-second-dp-algorithm/#231-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Il secondo algoritmo di PD per lo zaino 0/1 calcola $u(j,q)$, il peso minimo per ottenere esattamente il profitto $q$. Quale ipotesi sui dati serve?",
+    "opzioni": [
+     "Capacità $c$ pari",
+     "Profitti $p_j$ tutti diversi",
+     "Profitti $p_j$ interi",
+     "Pesi $w_j$ interi"
+    ],
+    "spiegazione": "Gli indici $q$ sono i profitti $0,1,\\dots,P$: servono profitti interi; i pesi possono essere qualunque."
+   },
+   "en": {
+    "testo": "The second DP algorithm for the 0/1 knapsack computes $u(j,q)$, the minimum weight to obtain exactly the profit $q$. Which hypothesis on the data is needed?",
+    "opzioni": [
+     "An even capacity $c$",
+     "Pairwise distinct profits $p_j$",
+     "Integer profits $p_j$",
+     "Integer weights $w_j$"
+    ],
+    "spiegazione": "The indices $q$ are the profits $0,1,\\dots,P$: integer profits are needed; weights can be arbitrary."
+   }
+  },
+  {
+   "id": "dp-f-262",
+   "livello": "teorema",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-secondo-algoritmo-di-pd/#231-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-second-dp-algorithm/#231-number-of-steps"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nella PD sui profitti per lo zaino 0/1, $u(n,q)$ è il peso minimo per ottenere il profitto $q$. Come si legge il valore ottimo con capacità $c$?",
+    "opzioni": [
+     "Il più grande $u(n,q)$",
+     "Il più grande $q$ con $u(n,q)\\le c$",
+     "Il più piccolo $q$ con $u(n,q)\\ge c$",
+     "Il valore $u(n,P)$"
+    ],
+    "spiegazione": "Il profitto $q$ si ottiene senza superare la capacità se e solo se $u(n,q)\\le c$: il valore ottimo è il più grande di questi $q$."
+   },
+   "en": {
+    "testo": "In the DP by profits for the 0/1 knapsack, $u(n,q)$ is the minimum weight to obtain the profit $q$. How is the optimal value with capacity $c$ read?",
+    "opzioni": [
+     "The largest $u(n,q)$",
+     "The largest $q$ with $u(n,q)\\le c$",
+     "The smallest $q$ with $u(n,q)\\ge c$",
+     "The value $u(n,P)$"
+    ],
+    "spiegazione": "Profit $q$ is obtained without exceeding the capacity if and only if $u(n,q)\\le c$: the optimal value is the largest such $q$."
+   }
+  },
+  {
+   "id": "dp-f-263",
+   "livello": "teorema",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-secondo-algoritmo-di-pd/#231-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-second-dp-algorithm/#231-number-of-steps"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Per lo zaino 0/1 con capacità $c$ e profitto totale $P$ ci sono una PD in $\\Theta(nc)$ e una sui profitti in $\\Theta(nP)$. Quando conviene la seconda?",
+    "opzioni": [
+     "Quando $P<c$",
+     "Quando $c<P$",
+     "Quando i pesi valgono $1$",
+     "Mai"
+    ],
+    "spiegazione": "I due tempi differiscono solo per il fattore $c$ o $P$: con profitti piccoli conviene la PD sui profitti."
+   },
+   "en": {
+    "testo": "For the 0/1 knapsack with capacity $c$ and total profit $P$ there are a DP in $\\Theta(nc)$ and a DP by profits in $\\Theta(nP)$. When is the second one better?",
+    "opzioni": [
+     "When $P<c$",
+     "When $c<P$",
+     "When all weights are $1$",
+     "Never"
+    ],
+    "spiegazione": "The two times differ only by the factor $c$ or $P$: with small profits the DP by profits is better."
+   }
+  },
+  {
+   "id": "dp-f-264",
+   "livello": "ipotesi",
+   "capitolo": "dp-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack/un-primo-algoritmo-di-pd-un-implementazione-con-liste/#223-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack/a-first-dp-algorithm-an-implementation-with-lists/#223-number-of-steps"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nell'implementazione con liste della PD per lo zaino 0/1 si scarta uno stato (peso $W$, profitto $Q$) dominato da $(W',Q')$. Quando c'è dominanza?",
+    "opzioni": [
+     "$W'\\ge W$ e $Q'\\ge Q$",
+     "$W'+Q'\\ge W+Q$",
+     "$W'\\le W$ e $Q'\\le Q$",
+     "$W'\\le W$ e $Q'\\ge Q$, con almeno una disuguaglianza stretta"
+    ],
+    "spiegazione": "Uno stato che pesa di più e rende non di più non porta mai a una soluzione migliore."
+   },
+   "en": {
+    "testo": "In the implementation with lists of the DP for the 0/1 knapsack a state (weight $W$, profit $Q$) dominated by $(W',Q')$ is discarded. When is there dominance?",
+    "opzioni": [
+     "$W'\\ge W$ and $Q'\\ge Q$",
+     "$W'+Q'\\ge W+Q$",
+     "$W'\\le W$ and $Q'\\le Q$",
+     "$W'\\le W$ and $Q'\\ge Q$, with at least one strict inequality"
+    ],
+    "spiegazione": "A state that weighs more and earns no more never leads to a better solution."
+   }
+  },
+  {
+   "id": "dp-f-265",
+   "livello": "ipotesi",
+   "capitolo": "dp-unbounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-unbounded-knapsack/un-primo-algoritmo-di-pd/#321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-unbounded-knapsack/a-first-dp-algorithm/#321-number-of-steps"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Nello zaino illimitato (UKP) la PD usa un solo indice: $v(k)=\\max_{j:\\,w_j\\le k}\\{p_j+v(k-w_j)\\}$. Quale caratteristica del problema lo permette?",
+    "opzioni": [
+     "Copie illimitate di ogni tipo",
+     "Pesi ordinati in modo crescente",
+     "Al più una copia per tipo",
+     "Capacità da riempire esattamente"
+    ],
+    "spiegazione": "Con copie illimitate le scelte possibili dipendono solo dalla capacità residua, non dagli oggetti già usati."
+   },
+   "en": {
+    "testo": "In the unbounded knapsack (UKP) the DP uses a single index: $v(k)=\\max_{j:\\,w_j\\le k}\\{p_j+v(k-w_j)\\}$. Which feature of the problem allows this?",
+    "opzioni": [
+     "Unlimited copies of each type",
+     "Weights sorted in increasing order",
+     "At most one copy per type",
+     "Capacity filled exactly"
+    ],
+    "spiegazione": "With unlimited copies the possible choices depend only on the residual capacity, not on the items already used."
+   }
+  },
+  {
+   "id": "dp-f-266",
+   "livello": "ipotesi",
+   "capitolo": "dp-unbounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-unbounded-knapsack/un-primo-algoritmo-di-pd/#321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-unbounded-knapsack/a-first-dp-algorithm/#321-number-of-steps"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella PD per lo zaino illimitato, quando nessun tipo entra nella capacità residua $k$ si pone $v(k)=0$ e non $-\\infty$. Su quale ipotesi si basa?",
+    "opzioni": [
+     "I profitti sono positivi",
+     "I pesi superano $c$",
+     "Ogni tipo compare almeno una volta",
+     "La capacità può restare inutilizzata"
+    ],
+    "spiegazione": "Una soluzione non deve riempire lo zaino: senza oggetti vale $0$; $-\\infty$ indicherebbe un sottoproblema senza soluzioni."
+   },
+   "en": {
+    "testo": "In the DP for the unbounded knapsack, when no type fits into the residual capacity $k$ the value is $v(k)=0$ and not $-\\infty$. Which hypothesis is this based on?",
+    "opzioni": [
+     "The profits are positive",
+     "The weights exceed $c$",
+     "Each type appears at least once",
+     "The capacity may stay unused"
+    ],
+    "spiegazione": "A solution need not fill the knapsack: with no item the value is $0$; $-\\infty$ would mark a subproblem without solutions."
+   }
+  },
+  {
+   "id": "dp-f-267",
+   "livello": "teorema",
+   "capitolo": "dp-unbounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-unbounded-knapsack/un-secondo-algoritmo-di-pd/#331-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-unbounded-knapsack/a-second-dp-algorithm/#331-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Il secondo algoritmo di PD per lo zaino illimitato usa $v(j,k)=\\max\\{v(j-1,k),\\,p_j+v(j,k-w_j)\\}$. Perché il secondo termine sta nella riga $j$?",
+    "opzioni": [
+     "Per usare il tipo $j$ una volta sola",
+     "Perché $v$ non dipende da $j$",
+     "Dopo una copia del tipo $j$ se ne possono prendere altre",
+     "La riga $j-1$ non è ancora calcolata"
+    ],
+    "spiegazione": "Restare nella riga $j$ lascia disponibile il tipo $j$: è la differenza con lo zaino 0/1."
+   },
+   "en": {
+    "testo": "The second DP algorithm for the unbounded knapsack uses $v(j,k)=\\max\\{v(j-1,k),\\,p_j+v(j,k-w_j)\\}$. Why is the second term in row $j$?",
+    "opzioni": [
+     "To use type $j$ only once",
+     "Because $v$ does not depend on $j$",
+     "After a copy of type $j$ more copies can be taken",
+     "Row $j-1$ is not computed yet"
+    ],
+    "spiegazione": "Staying in row $j$ keeps type $j$ available: this is the difference with the 0/1 knapsack."
+   }
+  },
+  {
+   "id": "dp-f-268",
+   "livello": "teorema",
+   "capitolo": "dp-unbounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-unbounded-knapsack/un-primo-algoritmo-di-pd/#321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-unbounded-knapsack/a-first-dp-algorithm/#321-number-of-steps"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quanti passi esegue la PD $v(k)=\\max_{j:\\,w_j\\le k}\\{p_j+v(k-w_j)\\}$ per lo zaino illimitato con $n$ tipi e capacità $c$, e di che tipo è il tempo?",
+    "opzioni": [
+     "$\\Theta(2^n c)$, esponenziale",
+     "$\\Theta(nc)$, pseudo-polinomiale",
+     "$\\Theta(nc)$, polinomiale",
+     "$\\Theta(c^2)$, pseudo-polinomiale"
+    ],
+    "spiegazione": "Per ognuna delle $c+1$ capacità si guardano $n$ tipi: $\\Theta(nc)$, polinomiale nel valore $c$ ma non nella sua lunghezza."
+   },
+   "en": {
+    "testo": "How many steps does the DP $v(k)=\\max_{j:\\,w_j\\le k}\\{p_j+v(k-w_j)\\}$ for the unbounded knapsack with $n$ types and capacity $c$ execute, and what kind of time is it?",
+    "opzioni": [
+     "$\\Theta(2^n c)$, exponential",
+     "$\\Theta(nc)$, pseudo-polynomial",
+     "$\\Theta(nc)$, polynomial",
+     "$\\Theta(c^2)$, pseudo-polynomial"
+    ],
+    "spiegazione": "For each of the $c+1$ capacities $n$ types are examined: $\\Theta(nc)$, polynomial in the value $c$ but not in its length."
+   }
+  },
+  {
+   "id": "dp-f-269",
+   "livello": "teorema",
+   "capitolo": "dp-bounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-bounded-knapsack/#421-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-bounded-knapsack/#421-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Lo zaino limitato (BKP) ha $n$ tipi, al più $b_j$ copie del tipo $j$, capacità $c$ e $b_{\\max}=\\max_j b_j$. Quanti passi esegue la PD che prova ogni numero di copie?",
+    "opzioni": [
+     "$\\Theta(n\\,b_{\\max})$",
+     "$\\Theta(c\\,b_{\\max}^{\\,n})$",
+     "$\\Theta(nc\\,b_{\\max})$",
+     "$\\Theta(nc)$"
+    ],
+    "spiegazione": "$(n+1)(c+1)$ celle, ciascuna con fino a $b_{\\max}+1$ confronti."
+   },
+   "en": {
+    "testo": "The bounded knapsack (BKP) has $n$ types, at most $b_j$ copies of type $j$, capacity $c$ and $b_{\\max}=\\max_j b_j$. How many steps does the DP trying every number of copies execute?",
+    "opzioni": [
+     "$\\Theta(n\\,b_{\\max})$",
+     "$\\Theta(c\\,b_{\\max}^{\\,n})$",
+     "$\\Theta(nc\\,b_{\\max})$",
+     "$\\Theta(nc)$"
+    ],
+    "spiegazione": "$(n+1)(c+1)$ cells, each with up to $b_{\\max}+1$ comparisons."
+   }
+  },
+  {
+   "id": "dp-f-270",
+   "livello": "ipotesi",
+   "capitolo": "dp-bounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-bounded-knapsack/#41-istanze-e-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-bounded-knapsack/#41-instances-and-feasible-solutions"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nello zaino limitato si può sostituire $b_j$ con $\\min\\{b_j,\\lfloor c/w_j\\rfloor\\}$. Perché il problema non cambia?",
+    "opzioni": [
+     "Tutti i $b_j$ diventano $1$",
+     "Più di $\\lfloor c/w_j\\rfloor$ copie non entrano comunque",
+     "L'ottimo usa meno di $b_j/2$ copie",
+     "I tipi con $b_j>c$ si eliminano"
+    ],
+    "spiegazione": "Ogni copia pesa $w_j$: con capacità $c$ ne entrano al più $\\lfloor c/w_j\\rfloor$; in più si ottiene $b_{\\max}\\le c$."
+   },
+   "en": {
+    "testo": "In the bounded knapsack $b_j$ can be replaced by $\\min\\{b_j,\\lfloor c/w_j\\rfloor\\}$. Why does the problem not change?",
+    "opzioni": [
+     "All $b_j$ become $1$",
+     "More than $\\lfloor c/w_j\\rfloor$ copies never fit anyway",
+     "The optimum uses fewer than $b_j/2$ copies",
+     "Types with $b_j>c$ are removed"
+    ],
+    "spiegazione": "Each copy weighs $w_j$: with capacity $c$ at most $\\lfloor c/w_j\\rfloor$ fit; moreover $b_{\\max}\\le c$."
+   }
+  },
+  {
+   "id": "dp-f-271",
+   "livello": "teorema",
+   "capitolo": "dp-bounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-bounded-knapsack/#41-istanze-e-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-bounded-knapsack/#41-instances-and-feasible-solutions"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Lo zaino limitato (BKP), con al più $b_j$ copie del tipo $j$, generalizza quali problemi?",
+    "opzioni": [
+     "Lo zaino 0/1 ($b_j=1$) e lo zaino illimitato ($b_j=\\lfloor c/w_j\\rfloor$)",
+     "Lo zaino 0/1 ($b_j=0$) e il subset sum ($b_j=1$)",
+     "Lo zaino illimitato ($b_j=1$) e lo zaino 0/1 ($b_j=c$)",
+     "Il cambio monete ($b_j=1$) e lo zaino 0/1 ($b_j=c$)"
+    ],
+    "spiegazione": "Una copia per tipo dà lo zaino 0/1; tutte le copie che entrano danno lo zaino illimitato."
+   },
+   "en": {
+    "testo": "The bounded knapsack (BKP), with at most $b_j$ copies of type $j$, generalizes which problems?",
+    "opzioni": [
+     "The 0/1 knapsack ($b_j=1$) and the unbounded knapsack ($b_j=\\lfloor c/w_j\\rfloor$)",
+     "The 0/1 knapsack ($b_j=0$) and subset sum ($b_j=1$)",
+     "The unbounded knapsack ($b_j=1$) and the 0/1 knapsack ($b_j=c$)",
+     "Coin change ($b_j=1$) and the 0/1 knapsack ($b_j=c$)"
+    ],
+    "spiegazione": "One copy per type gives the 0/1 knapsack; all copies that fit give the unbounded knapsack."
+   }
+  },
+  {
+   "id": "dp-f-272",
+   "livello": "ipotesi",
+   "capitolo": "dp-bounded-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-bounded-knapsack/#42-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-bounded-knapsack/#42-a-dp-algorithm"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella ricorrenza $v(j,k)=\\max_{d}\\{d\\,p_j+v(j-1,k-d\\,w_j)\\}$ dello zaino limitato, quali valori assume il numero $d$ di copie?",
+    "opzioni": [
+     "$0,1,\\dots,b_j$, qualunque sia $k$",
+     "$1,2,\\dots,\\lfloor c/w_j\\rfloor$",
+     "Solo $0$ oppure $b_j$",
+     "$0,1,\\dots,\\min\\{b_j,\\lfloor k/w_j\\rfloor\\}$"
+    ],
+    "spiegazione": "Al più $b_j$ copie, e devono entrare nella capacità residua: $d\\,w_j\\le k$."
+   },
+   "en": {
+    "testo": "In the recurrence $v(j,k)=\\max_{d}\\{d\\,p_j+v(j-1,k-d\\,w_j)\\}$ of the bounded knapsack, which values does the number $d$ of copies take?",
+    "opzioni": [
+     "$0,1,\\dots,b_j$, whatever $k$ is",
+     "$1,2,\\dots,\\lfloor c/w_j\\rfloor$",
+     "Only $0$ or $b_j$",
+     "$0,1,\\dots,\\min\\{b_j,\\lfloor k/w_j\\rfloor\\}$"
+    ],
+    "spiegazione": "At most $b_j$ copies, and they must fit the residual capacity: $d\\,w_j\\le k$."
+   }
+  },
+  {
+   "id": "dp-f-273",
+   "livello": "ipotesi",
+   "capitolo": "dp-subset-sum",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-subset-sum/#51-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-subset-sum/#51-a-dp-algorithm"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Nella PD per il subset sum, $r(j,k)$ dice se $k$ è il peso di un sottoinsieme dei primi $j$ oggetti. Perché $r(j,0)=\\textit{true}$ per ogni $j$?",
+    "opzioni": [
+     "Il sottoinsieme vuoto pesa $0$",
+     "I pesi sono positivi",
+     "$0$ è il valore obiettivo",
+     "Il primo oggetto pesa $0$"
+    ],
+    "spiegazione": "Il valore $0$ si raggiunge sempre senza oggetti; con zero oggetti nessun $k\\ge 1$ si raggiunge."
+   },
+   "en": {
+    "testo": "In the DP for subset sum, $r(j,k)$ tells whether $k$ is the weight of a subset of the first $j$ items. Why is $r(j,0)=\\textit{true}$ for every $j$?",
+    "opzioni": [
+     "The empty subset weighs $0$",
+     "The weights are positive",
+     "$0$ is the target value",
+     "The first item weighs $0$"
+    ],
+    "spiegazione": "The value $0$ is always reached with no item; with no item no $k\\ge 1$ is reached."
+   }
+  },
+  {
+   "id": "dp-f-274",
+   "livello": "teorema",
+   "capitolo": "dp-subset-sum",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-subset-sum/#51-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-subset-sum/#51-a-dp-algorithm"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il subset sum chiede se un sottoinsieme ha peso esattamente $c$. Sia $z$ il valore ottimo dello zaino 0/1 con $p_j=w_j$ e capacità $c$. Quando la risposta è «sì»?",
+    "opzioni": [
+     "Se e solo se $z\\ge c/2$",
+     "Se e solo se $z<c$",
+     "Mai: i problemi non sono legati",
+     "Se e solo se $z=c$"
+    ],
+    "spiegazione": "Con $p_j=w_j$ il profitto è il peso: il massimo peso non oltre $c$ vale $c$ esattamente quando un sottoinsieme pesa $c$."
+   },
+   "en": {
+    "testo": "Subset sum asks whether some subset has weight exactly $c$. Let $z$ be the optimal value of the 0/1 knapsack with $p_j=w_j$ and capacity $c$. When is the answer «yes»?",
+    "opzioni": [
+     "If and only if $z\\ge c/2$",
+     "If and only if $z<c$",
+     "Never: the problems are unrelated",
+     "If and only if $z=c$"
+    ],
+    "spiegazione": "With $p_j=w_j$ profit is weight: the maximum weight up to $c$ equals $c$ exactly when some subset weighs $c$."
+   }
+  },
+  {
+   "id": "dp-f-275",
+   "livello": "teorema",
+   "capitolo": "dp-subset-sum",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-subset-sum/#511-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-subset-sum/#511-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "La PD $r(j,k)=r(j-1,k)\\lor r(j-1,k-w_j)$ per il subset sum con $n$ oggetti e valore obiettivo $c$: quanti passi esegue e dove si legge la risposta?",
+    "opzioni": [
+     "$\\Theta(2^n)$; in $r(n,c)$",
+     "$\\Theta(n+c)$; in $r(n,0)$",
+     "$\\Theta(nc)$; in $r(n,c)$",
+     "$\\Theta(nc)$; in $r(c,n)$"
+    ],
+    "spiegazione": "$(n+1)(c+1)$ celle con un «o» logico ciascuna; la risposta riguarda tutti gli oggetti e il valore $c$."
+   },
+   "en": {
+    "testo": "The DP $r(j,k)=r(j-1,k)\\lor r(j-1,k-w_j)$ for subset sum with $n$ items and target value $c$: how many steps, and where is the answer read?",
+    "opzioni": [
+     "$\\Theta(2^n)$; in $r(n,c)$",
+     "$\\Theta(n+c)$; in $r(n,0)$",
+     "$\\Theta(nc)$; in $r(n,c)$",
+     "$\\Theta(nc)$; in $r(c,n)$"
+    ],
+    "spiegazione": "$(n+1)(c+1)$ cells with one logical «or» each; the answer concerns all items and the value $c$."
+   }
+  },
+  {
+   "id": "dp-f-276",
+   "livello": "ipotesi",
+   "capitolo": "dp-multiple-choice-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-multiple-choice-knapsack/#61-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-multiple-choice-knapsack/#61-a-dp-algorithm"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella PD per lo zaino a scelta multipla (MCKP) si pone $v(h,k)=-\\infty$ quando nessun oggetto della classe $h$ entra. Su quale vincolo del problema si basa?",
+    "opzioni": [
+     "Da ogni classe si sceglie al più un oggetto",
+     "Gli oggetti sono in copie illimitate",
+     "La capacità va riempita esattamente",
+     "Da ogni classe si sceglie esattamente un oggetto"
+    ],
+    "spiegazione": "Se una classe non può contribuire con un oggetto, il sottoproblema non ha soluzioni ammissibili: $-\\infty$."
+   },
+   "en": {
+    "testo": "In the DP for the multiple-choice knapsack (MCKP) $v(h,k)=-\\infty$ when no item of class $h$ fits. Which constraint of the problem is this based on?",
+    "opzioni": [
+     "At most one item is chosen from each class",
+     "The items are in unlimited copies",
+     "The capacity must be filled exactly",
+     "Exactly one item is chosen from each class"
+    ],
+    "spiegazione": "If a class cannot contribute an item, the subproblem has no feasible solution: $-\\infty$."
+   }
+  },
+  {
+   "id": "dp-f-277",
+   "livello": "teorema",
+   "capitolo": "dp-multiple-choice-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-multiple-choice-knapsack/#611-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-multiple-choice-knapsack/#611-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Lo zaino a scelta multipla ha $q$ classi $\\mathscr{J}_h$, $n=\\sum_h|\\mathscr{J}_h|$ oggetti e capacità $c$. Quanti passi esegue la PD sulle classi, e quando l'istanza è inammissibile?",
+    "opzioni": [
+     "$\\Theta(nc)$; se $v(q,c)=0$",
+     "$\\Theta(n^2c)$; se $v(q,0)=-\\infty$",
+     "$\\Theta(nc)$; se $v(q,c)=-\\infty$",
+     "$\\Theta(qc)$; se $v(q,c)=0$"
+    ],
+    "spiegazione": "Ogni cella $(h,k)$ guarda gli oggetti della classe $h$: in tutto $\\Theta(c\\sum_h|\\mathscr{J}_h|)=\\Theta(nc)$."
+   },
+   "en": {
+    "testo": "The multiple-choice knapsack has $q$ classes $\\mathscr{J}_h$, $n=\\sum_h|\\mathscr{J}_h|$ items and capacity $c$. How many steps does the DP over the classes execute, and when is the instance infeasible?",
+    "opzioni": [
+     "$\\Theta(nc)$; if $v(q,c)=0$",
+     "$\\Theta(n^2c)$; if $v(q,0)=-\\infty$",
+     "$\\Theta(nc)$; if $v(q,c)=-\\infty$",
+     "$\\Theta(qc)$; if $v(q,c)=0$"
+    ],
+    "spiegazione": "Each cell $(h,k)$ examines the items of class $h$: $\\Theta(c\\sum_h|\\mathscr{J}_h|)=\\Theta(nc)$ in total."
+   }
+  },
+  {
+   "id": "dp-f-278",
+   "livello": "teorema",
+   "capitolo": "dp-multidimensional-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-multidimensional-knapsack/#712-la-maledizione-della-dimensionalita",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-multidimensional-knapsack/#712-the-curse-of-dimensionality"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "La PD per lo zaino multidimensionale (MDKP) con $m$ dimensioni e capacità $c_1,\\dots,c_m$ esegue $\\Theta(m\\,n\\prod_d(c_d+1))$ passi. Che cosa succede al crescere di $m$?",
+    "opzioni": [
+     "Il tempo diventa polinomiale",
+     "Il numero di stati non cambia",
+     "Gli stati crescono in modo esponenziale in $m$",
+     "Il tempo cresce in modo lineare in $m$"
+    ],
+    "spiegazione": "Il prodotto delle $m$ capacità esplode: è la maledizione della dimensionalità."
+   },
+   "en": {
+    "testo": "The DP for the multidimensional knapsack (MDKP) with $m$ dimensions and capacities $c_1,\\dots,c_m$ executes $\\Theta(m\\,n\\prod_d(c_d+1))$ steps. What happens as $m$ grows?",
+    "opzioni": [
+     "The time becomes polynomial",
+     "The number of states does not change",
+     "The states grow exponentially in $m$",
+     "The time grows linearly in $m$"
+    ],
+    "spiegazione": "The product of the $m$ capacities explodes: the curse of dimensionality."
+   }
+  },
+  {
+   "id": "dp-f-279",
+   "livello": "ipotesi",
+   "capitolo": "dp-multidimensional-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-multidimensional-knapsack/#711-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-multidimensional-knapsack/#711-number-of-steps"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Sotto quale ipotesi la PD per lo zaino multidimensionale, in $\\Theta(m\\,n\\prod_d(c_d+1))$ passi, è pseudo-polinomiale?",
+    "opzioni": [
+     "$n\\le m$",
+     "Il numero $m$ di dimensioni è fissato",
+     "Le capacità $c_d$ sono tutte uguali",
+     "I profitti sono interi"
+    ],
+    "spiegazione": "Con $m$ costante il tempo è $\\Theta(n\\prod_d c_d)$, polinomiale nei valori delle capacità; con $m$ nell'input è esponenziale."
+   },
+   "en": {
+    "testo": "Under which hypothesis is the DP for the multidimensional knapsack, with $\\Theta(m\\,n\\prod_d(c_d+1))$ steps, pseudo-polynomial?",
+    "opzioni": [
+     "$n\\le m$",
+     "The number $m$ of dimensions is fixed",
+     "All capacities $c_d$ are equal",
+     "The profits are integer"
+    ],
+    "spiegazione": "With a constant $m$ the time is $\\Theta(n\\prod_d c_d)$, polynomial in the capacity values; with $m$ in the input it is exponential."
+   }
+  },
+  {
+   "id": "dp-f-280",
+   "livello": "ipotesi",
+   "capitolo": "dp-knapsack-setups",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack-setups/#81-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack-setups/#81-a-dp-algorithm"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella PD per lo zaino con setup la classe $h$ si apre con $u(h,0,k)=v(h-1,k-s_h)-f_h$. Che cosa garantisce questo valore iniziale?",
+    "opzioni": [
+     "La classe $h$ resta sempre chiusa",
+     "Il setup non occupa capacità",
+     "Il setup (peso $s_h$, costo $f_h$) si paga una sola volta per classe",
+     "Il setup si paga per ogni oggetto della classe"
+    ],
+    "spiegazione": "Il costo e il peso di setup si tolgono all'apertura della classe; poi si prosegue con la ricorrenza del KP sui suoi oggetti."
+   },
+   "en": {
+    "testo": "In the DP for the knapsack with setups class $h$ opens with $u(h,0,k)=v(h-1,k-s_h)-f_h$. What does this initial value guarantee?",
+    "opzioni": [
+     "Class $h$ always stays closed",
+     "The setup takes no capacity",
+     "The setup (weight $s_h$, cost $f_h$) is paid once per class",
+     "The setup is paid for every item of the class"
+    ],
+    "spiegazione": "Setup cost and weight are subtracted when the class opens; then the KP recurrence continues over its items."
+   }
+  },
+  {
+   "id": "dp-f-281",
+   "livello": "teorema",
+   "capitolo": "dp-knapsack-setups",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-knapsack-setups/#811-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-knapsack-setups/#811-number-of-steps"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quanti passi esegue la PD per lo zaino con setup con $n$ oggetti e capacità $c$?",
+    "opzioni": [
+     "$\\Theta(nc^2)$",
+     "$\\Theta(nc)$",
+     "$\\Theta(n^2c)$",
+     "$\\Theta(2^q nc)$"
+    ],
+    "spiegazione": "Come la PD dello zaino 0/1: un numero costante di confronti per ogni oggetto e ogni capacità, più i confronti delle classi."
+   },
+   "en": {
+    "testo": "How many steps does the DP for the knapsack with setups with $n$ items and capacity $c$ execute?",
+    "opzioni": [
+     "$\\Theta(nc^2)$",
+     "$\\Theta(nc)$",
+     "$\\Theta(n^2c)$",
+     "$\\Theta(2^q nc)$"
+    ],
+    "spiegazione": "As the DP of the 0/1 knapsack: a constant number of comparisons per item and capacity, plus those of the classes."
+   }
+  },
+  {
+   "id": "dp-f-282",
+   "livello": "teorema",
+   "capitolo": "dp-multiple-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-multiple-knapsack/#911-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-multiple-knapsack/#911-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella PD per gli zaini multipli (MKP) con $m$ zaini lo stato è $(j,\\vet{k})$, con $\\vet{k}$ le capacità residue. Quante scelte ha l'oggetto $j$ e quanti passi esegue la PD?",
+    "opzioni": [
+     "$m$; $\\Theta(n\\,m^2)$",
+     "$2^m$; $\\Theta(n\\sum_i c_i)$",
+     "$m+1$; $\\Theta(m\\,n\\prod_i(c_i+1))$",
+     "$2$; $\\Theta(nc)$"
+    ],
+    "spiegazione": "L'oggetto resta fuori o va in uno degli $m$ zaini; gli stati sono $n\\prod_i(c_i+1)$."
+   },
+   "en": {
+    "testo": "In the DP for the multiple knapsack (MKP) with $m$ knapsacks the state is $(j,\\vet{k})$, with $\\vet{k}$ the residual capacities. How many choices does item $j$ have, and how many steps does the DP execute?",
+    "opzioni": [
+     "$m$; $\\Theta(n\\,m^2)$",
+     "$2^m$; $\\Theta(n\\sum_i c_i)$",
+     "$m+1$; $\\Theta(m\\,n\\prod_i(c_i+1))$",
+     "$2$; $\\Theta(nc)$"
+    ],
+    "spiegazione": "The item stays out or goes into one of the $m$ knapsacks; there are $n\\prod_i(c_i+1)$ states."
+   }
+  },
+  {
+   "id": "dp-f-283",
+   "livello": "ipotesi",
+   "capitolo": "dp-multiple-knapsack",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-multiple-knapsack/#91-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-multiple-knapsack/#91-a-dp-algorithm"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per gli zaini multipli, perché non basta riempire uno zaino alla volta con la PD dello zaino 0/1 sugli oggetti rimasti?",
+    "opzioni": [
+     "Perché gli oggetti sono in copie illimitate",
+     "Le scelte di uno zaino dipendono dagli altri: così si può perdere l'ottimo",
+     "Perché la PD dello zaino 0/1 non è esatta",
+     "Perché le capacità devono essere uguali"
+    ],
+    "spiegazione": "Un riempimento ottimo del primo zaino può togliere oggetti che servirebbero agli altri: la PD deve guardare tutte le capacità insieme."
+   },
+   "en": {
+    "testo": "For the multiple knapsack, why is it not enough to fill one knapsack at a time with the 0/1 knapsack DP on the remaining items?",
+    "opzioni": [
+     "Because the items are in unlimited copies",
+     "The choices of a knapsack depend on the others: the optimum can be lost",
+     "Because the 0/1 knapsack DP is not exact",
+     "Because the capacities must be equal"
+    ],
+    "spiegazione": "An optimal filling of the first knapsack may take items needed by the others: the DP must consider all capacities together."
+   }
+  },
+  {
+   "id": "dp-f-284",
+   "livello": "teorema",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/#1012-la-proprieta-zero-inventory-ordering",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/#1012-the-zero-inventory-ordering-property"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa afferma la proprietà zero-inventory ordering (Wagner e Whitin) per il lot sizing senza capacità (ULS), con produzioni $x_t$ e scorte $s_t$?",
+    "opzioni": [
+     "Ogni soluzione ammissibile ha $x_t=d_t$",
+     "Esiste una soluzione ottima con $s_{t-1}\\,x_t=0$ per ogni $t$",
+     "Ogni soluzione ottima produce in ogni periodo",
+     "Esiste una soluzione ottima con $s_t>0$ per ogni $t$"
+    ],
+    "spiegazione": "Un periodo produce solo se arriva con la scorta vuota: la produzione di un periodo copre la domanda di periodi consecutivi."
+   },
+   "en": {
+    "testo": "What does the zero-inventory ordering property (Wagner and Whitin) state for uncapacitated lot sizing (ULS), with productions $x_t$ and inventories $s_t$?",
+    "opzioni": [
+     "Every feasible solution has $x_t=d_t$",
+     "Some optimal solution has $s_{t-1}\\,x_t=0$ for every $t$",
+     "Every optimal solution produces in every period",
+     "Some optimal solution has $s_t>0$ for every $t$"
+    ],
+    "spiegazione": "A period produces only if it starts with an empty inventory: the production of a period covers the demand of consecutive periods."
+   }
+  },
+  {
+   "id": "dp-f-285",
+   "livello": "ipotesi",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/#1012-la-proprieta-zero-inventory-ordering",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/#1012-the-zero-inventory-ordering-property"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Sotto quali ipotesi vale la proprietà zero-inventory ordering del lot sizing?",
+    "opzioni": [
+     "Nessuna capacità di produzione e costi non negativi",
+     "Capacità costanti e costi qualunque",
+     "Domande tutte uguali",
+     "Costi di setup nulli"
+    ],
+    "spiegazione": "Con produzione illimitata e costi non negativi conviene produrre solo a scorta vuota; con le capacità la proprietà cade."
+   },
+   "en": {
+    "testo": "Under which hypotheses does the zero-inventory ordering property of lot sizing hold?",
+    "opzioni": [
+     "No production capacities and non-negative costs",
+     "Constant capacities and arbitrary costs",
+     "All demands equal",
+     "Zero setup costs"
+    ],
+    "spiegazione": "With unlimited production and non-negative costs it pays to produce only with an empty inventory; with capacities the property fails."
+   }
+  },
+  {
+   "id": "dp-f-286",
+   "livello": "teorema",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/un-algoritmo-di-pd-per-l-uls-passo-1-e-passo-2/#1023-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/a-dp-algorithm-for-the-uls-step-1-and-step-2/#1023-number-of-steps"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella PD di Wagner e Whitin $v(t)=\\min_{j\\le t}\\{v(j-1)+c_{j,t}\\}$ per il lot sizing senza capacità con $m$ periodi: quanti passi servono, e che cosa calcola la ricorrenza?",
+    "opzioni": [
+     "$\\Theta(m)$; un albero ricoprente minimo",
+     "$\\Theta(2^m)$; tutti i piani di produzione",
+     "$\\Theta(m^3)$; un flusso massimo",
+     "$\\Theta(m^2)$; un cammino minimo nella rete dei lotti"
+    ],
+    "spiegazione": "I nodi sono $0,\\dots,m$ e l'arco $(j-1,t)$ costa $c_{j,t}$: $v(t)$ è la lunghezza di un cammino minimo da $0$ a $t$."
+   },
+   "en": {
+    "testo": "In the Wagner–Whitin DP $v(t)=\\min_{j\\le t}\\{v(j-1)+c_{j,t}\\}$ for uncapacitated lot sizing with $m$ periods: how many steps, and what does the recurrence compute?",
+    "opzioni": [
+     "$\\Theta(m)$; a minimum spanning tree",
+     "$\\Theta(2^m)$; all production plans",
+     "$\\Theta(m^3)$; a maximum flow",
+     "$\\Theta(m^2)$; a shortest path in the network of the runs"
+    ],
+    "spiegazione": "Nodes are $0,\\dots,m$ and arc $(j-1,t)$ costs $c_{j,t}$: $v(t)$ is the length of a shortest path from $0$ to $t$."
+   }
+  },
+  {
+   "id": "dp-f-287",
+   "livello": "ipotesi",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/un-algoritmo-di-pd-per-l-uls/#1021-il-costo-di-un-lotto-di-produzione",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/a-dp-algorithm-for-the-uls/#1021-the-cost-of-a-production-run"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nel lot sizing senza capacità, perché un lotto di produzione che copre i periodi $j,\\dots,t$ produce esattamente $D_{j,t}=d_j+\\dots+d_t$?",
+    "opzioni": [
+     "Perché la capacità vale $D_{j,t}$",
+     "Perché i costi di setup sono nulli",
+     "Per la proprietà zero-inventory ordering",
+     "Perché le domande sono uguali"
+    ],
+    "spiegazione": "Il periodo $j$ produce a scorta vuota e il prossimo lotto parte a scorta vuota: si produce tutta e sola la domanda dei periodi coperti."
+   },
+   "en": {
+    "testo": "In uncapacitated lot sizing, why does a production run covering the periods $j,\\dots,t$ produce exactly $D_{j,t}=d_j+\\dots+d_t$?",
+    "opzioni": [
+     "Because the capacity is $D_{j,t}$",
+     "Because setup costs are zero",
+     "Because of the zero-inventory ordering property",
+     "Because the demands are equal"
+    ],
+    "spiegazione": "Period $j$ produces with an empty inventory and the next run starts empty: exactly the demand of the covered periods is produced."
+   }
+  },
+  {
+   "id": "dp-f-288",
+   "livello": "teorema",
+   "capitolo": "dp-capacitated-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-capacitated-lot-sizing/#112-un-algoritmo-di-pd-per-il-cls",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-capacitated-lot-sizing/#112-a-dp-algorithm-for-the-cls"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nella PD per il lot sizing capacitato (CLS) lo stato è $(t,k)$, con $k$ la scorta a fine periodo $t$. Dove si legge il valore ottimo, con $m$ periodi?",
+    "opzioni": [
+     "In $v(1,0)$",
+     "In $v(m,0)$",
+     "In $v(0,m)$",
+     "In $\\max_k v(m,k)$"
+    ],
+    "spiegazione": "Alla fine dell'orizzonte la scorta è zero: il valore ottimo è quello dello stato $(m,0)$."
+   },
+   "en": {
+    "testo": "In the DP for capacitated lot sizing (CLS) the state is $(t,k)$, with $k$ the inventory at the end of period $t$. Where is the optimal value read, with $m$ periods?",
+    "opzioni": [
+     "In $v(1,0)$",
+     "In $v(m,0)$",
+     "In $v(0,m)$",
+     "In $\\max_k v(m,k)$"
+    ],
+    "spiegazione": "At the end of the horizon the inventory is zero: the optimal value is that of state $(m,0)$."
+   }
+  },
+  {
+   "id": "dp-f-289",
+   "livello": "ipotesi",
+   "capitolo": "dp-capacitated-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-capacitated-lot-sizing/#111-notazione-modello-e-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-capacitated-lot-sizing/#111-notation-model-and-feasible-solutions"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Perché la PD di Wagner e Whitin sui lotti di produzione non si applica al lot sizing capacitato?",
+    "opzioni": [
+     "Con le capacità la proprietà zero-inventory ordering non vale",
+     "Perché i costi possono essere negativi",
+     "Perché la rete dei lotti ha cicli",
+     "Perché le domande non sono intere"
+    ],
+    "spiegazione": "Con capacità limitate un periodo può dover produrre con unità ancora in scorta: un lotto non produce più esattamente $D_{j,t}$."
+   },
+   "en": {
+    "testo": "Why does the Wagner–Whitin DP over the production runs not apply to capacitated lot sizing?",
+    "opzioni": [
+     "With capacities zero-inventory ordering does not hold",
+     "Because costs can be negative",
+     "Because the network of runs has cycles",
+     "Because demands are not integer"
+    ],
+    "spiegazione": "With limited capacities a period may have to produce with units still in stock: a run no longer produces exactly $D_{j,t}$."
+   }
+  },
+  {
+   "id": "dp-f-290",
+   "livello": "teorema",
+   "capitolo": "dp-capacitated-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-capacitated-lot-sizing/#1123-il-caso-a-capacita-costante",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-capacitated-lot-sizing/#1123-the-case-of-constant-capacity"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa si sa della complessità del lot sizing capacitato a un prodotto?",
+    "opzioni": [
+     "È sempre polinomiale",
+     "È NP-difficile anche senza capacità",
+     "Con capacità costante è NP-difficile",
+     "Con capacità costante è polinomiale; con capacità generali è NP-difficile"
+    ],
+    "spiegazione": "Con capacità costante vale una proprietà più debole e il problema è polinomiale; in generale la PD sugli stati $(t,k)$ è solo pseudo-polinomiale."
+   },
+   "en": {
+    "testo": "What is known about the complexity of single-item capacitated lot sizing?",
+    "opzioni": [
+     "It is always polynomial",
+     "It is NP-hard even without capacities",
+     "With constant capacity it is NP-hard",
+     "With constant capacity it is polynomial; with general capacities it is NP-hard"
+    ],
+    "spiegazione": "With constant capacity a weaker property holds and the problem is polynomial; in general the DP on the states $(t,k)$ is only pseudo-polynomial."
+   }
+  },
+  {
+   "id": "dp-f-291",
+   "livello": "ipotesi",
+   "capitolo": "dp-capacitated-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-capacitated-lot-sizing/#1122-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-capacitated-lot-sizing/#1122-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "La PD per il lot sizing capacitato esegue $O(mDC)$ passi, con $D$ la domanda totale e $C$ la capacità massima. Perché è pseudo-polinomiale?",
+    "opzioni": [
+     "Perché la scorta è sempre zero",
+     "Perché la rete ha $2^m$ archi",
+     "Il tempo dipende dai valori $D$ e $C$, non solo da $m$",
+     "Perché $m$ è esponenziale"
+    ],
+    "spiegazione": "Gli stati sono indicizzati dalle quantità in scorta: il numero di passi cresce con i valori numerici dei dati."
+   },
+   "en": {
+    "testo": "The DP for capacitated lot sizing takes $O(mDC)$ steps, with $D$ the total demand and $C$ the maximum capacity. Why is it pseudo-polynomial?",
+    "opzioni": [
+     "Because the inventory is always zero",
+     "Because the network has $2^m$ arcs",
+     "The time depends on the values $D$ and $C$, not only on $m$",
+     "Because $m$ is exponential"
+    ],
+    "spiegazione": "The states are indexed by inventory quantities: the number of steps grows with the numerical values of the data."
+   }
+  },
+  {
+   "id": "dp-f-292",
+   "livello": "teorema",
+   "capitolo": "dp-coin-change",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-coin-change/#122-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-coin-change/#122-a-dp-algorithm"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nel cambio monete (CCP) con tagli $w_1,\\dots,w_n$ e importo $c$: che cosa calcola $v(k)=\\min_{j:\\,w_j\\le k}\\{1+v(k-w_j)\\}$ con $v(0)=0$, e in quanti passi?",
+    "opzioni": [
+     "Il minimo numero di monete; $\\Theta(c\\log c)$",
+     "Il massimo valore con $k$ monete; $\\Theta(n^2)$",
+     "Il minimo numero di monete per l'importo $k$; $\\Theta(nc)$",
+     "Il numero di modi di formare $k$; $\\Theta(nc)$"
+    ],
+    "spiegazione": "Si prova ogni taglio per la prima moneta; per ognuno dei $c+1$ importi si guardano $n$ tagli."
+   },
+   "en": {
+    "testo": "In coin change (CCP) with denominations $w_1,\\dots,w_n$ and amount $c$: what does $v(k)=\\min_{j:\\,w_j\\le k}\\{1+v(k-w_j)\\}$ with $v(0)=0$ compute, and in how many steps?",
+    "opzioni": [
+     "The minimum number of coins; $\\Theta(c\\log c)$",
+     "The maximum value with $k$ coins; $\\Theta(n^2)$",
+     "The minimum number of coins for amount $k$; $\\Theta(nc)$",
+     "The number of ways to form $k$; $\\Theta(nc)$"
+    ],
+    "spiegazione": "Each denomination is tried for the first coin; for each of the $c+1$ amounts $n$ denominations are examined."
+   }
+  },
+  {
+   "id": "dp-f-293",
+   "livello": "ipotesi",
+   "capitolo": "dp-coin-change",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-coin-change/#122-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-coin-change/#122-a-dp-algorithm"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nella PD per il cambio monete gli importi che non si possono formare hanno $v(k)=+\\infty$ e non $0$. Perché?",
+    "opzioni": [
+     "Perché $v(0)=+\\infty$",
+     "Il resto va dato esattamente e si minimizza il numero di monete",
+     "Perché i tagli sono positivi",
+     "Perché la capacità può restare inutilizzata"
+    ],
+    "spiegazione": "Con $0$ un importo impossibile sembrerebbe il migliore; $+\\infty$ lo esclude dal minimo. L'istanza è inammissibile se $v(c)=+\\infty$."
+   },
+   "en": {
+    "testo": "In the DP for coin change the amounts that cannot be formed have $v(k)=+\\infty$ and not $0$. Why?",
+    "opzioni": [
+     "Because $v(0)=+\\infty$",
+     "Change must be exact and the number of coins is minimized",
+     "Because the denominations are positive",
+     "Because the capacity may stay unused"
+    ],
+    "spiegazione": "With $0$ an impossible amount would look best; $+\\infty$ excludes it from the minimum. The instance is infeasible if $v(c)=+\\infty$."
+   }
+  },
+  {
+   "id": "dp-f-294",
+   "livello": "teorema",
+   "capitolo": "dp-coin-change",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-coin-change/#121-istanze-e-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-coin-change/#121-instances-and-feasible-solutions"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Tagli $\\{1,3,4\\}$, importo $6$. Che cosa danno il greedy «moneta più grande che entra» e la PD per il cambio monete?",
+    "opzioni": [
+     "Greedy $3$ monete ($4+1+1$), PD $2$ monete ($3+3$)",
+     "Entrambi $2$ monete",
+     "Greedy $2$ monete, PD $3$ monete",
+     "Entrambi $3$ monete"
+    ],
+    "spiegazione": "Il greedy non è esatto per tagli qualunque; la PD trova sempre il minimo: $v(6)=2$."
+   },
+   "en": {
+    "testo": "Denominations $\\{1,3,4\\}$, amount $6$. What do the greedy «largest coin that fits» and the DP for coin change give?",
+    "opzioni": [
+     "Greedy $3$ coins ($4+1+1$), DP $2$ coins ($3+3$)",
+     "Both $2$ coins",
+     "Greedy $2$ coins, DP $3$ coins",
+     "Both $3$ coins"
+    ],
+    "spiegazione": "The greedy is not exact for arbitrary denominations; the DP always finds the minimum: $v(6)=2$."
+   }
+  },
+  {
+   "id": "dp-f-295",
+   "livello": "teorema",
+   "capitolo": "dp-rod-cutting",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-rod-cutting/un-primo-algoritmo-di-pd/#1321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-rod-cutting/a-first-dp-algorithm/#1321-number-of-steps"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nel taglio delle aste (RCP) con un'asta di lunghezza $n$ e profitti $p_1,\\dots,p_n$, la PD $v(\\ell)=\\max_{j\\le\\ell}\\{p_j+v(\\ell-j)\\}$ esegue $\\Theta(n^2)$ passi. Perché è un tempo polinomiale?",
+    "opzioni": [
+     "Perché i profitti sono interi",
+     "Perché $n$ si scrive con $\\log n$ bit",
+     "Perché la ricorrenza ha un solo caso base",
+     "L'input contiene $n$ profitti: $n$ è anche il numero dei dati"
+    ],
+    "spiegazione": "A differenza di $c$ nello zaino, $n$ conta i valori dell'input: $\\Theta(n^2)$ è polinomiale nella sua dimensione."
+   },
+   "en": {
+    "testo": "In rod cutting (RCP) with a rod of length $n$ and profits $p_1,\\dots,p_n$, the DP $v(\\ell)=\\max_{j\\le\\ell}\\{p_j+v(\\ell-j)\\}$ executes $\\Theta(n^2)$ steps. Why is this time polynomial?",
+    "opzioni": [
+     "Because the profits are integer",
+     "Because $n$ is written with $\\log n$ bits",
+     "Because the recurrence has one base case",
+     "The input contains $n$ profits: $n$ is also the number of data"
+    ],
+    "spiegazione": "Unlike $c$ in the knapsack, $n$ counts the input values: $\\Theta(n^2)$ is polynomial in its size."
+   }
+  },
+  {
+   "id": "dp-f-296",
+   "livello": "ipotesi",
+   "capitolo": "dp-rod-cutting",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-rod-cutting/un-primo-algoritmo-di-pd/#1321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-rod-cutting/a-first-dp-algorithm/#1321-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella PD per il taglio delle aste, $v(\\ell)=\\max_{j\\le\\ell}\\{p_j+v(\\ell-j)\\}$: quale ipotesi sui pezzi permette di usare la stessa ricorrenza per l'asta residua $\\ell-j$?",
+    "opzioni": [
+     "I profitti crescono con la lunghezza",
+     "L'asta va tagliata in due pezzi",
+     "Ogni lunghezza si può tagliare quante volte si vuole",
+     "Ogni lunghezza al più una volta"
+    ],
+    "spiegazione": "Il pezzo di lunghezza $j$ resta disponibile: l'asta residua è lo stesso problema con lunghezza $\\ell-j$."
+   },
+   "en": {
+    "testo": "In the DP for rod cutting, $v(\\ell)=\\max_{j\\le\\ell}\\{p_j+v(\\ell-j)\\}$: which hypothesis on the pieces allows the same recurrence for the residual rod $\\ell-j$?",
+    "opzioni": [
+     "Profits grow with the length",
+     "The rod is cut into two pieces",
+     "Each length can be cut any number of times",
+     "Each length at most once"
+    ],
+    "spiegazione": "The piece of length $j$ stays available: the residual rod is the same problem with length $\\ell-j$."
+   }
+  },
+  {
+   "id": "dp-f-297",
+   "livello": "teorema",
+   "capitolo": "dp-rod-cutting",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-rod-cutting/#1311-codifica-delle-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-rod-cutting/#1311-encoding-of-feasible-solutions"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "In quanti modi si può tagliare un'asta di lunghezza intera $n$ in pezzi di lunghezza intera, se conta l'ordine dei pezzi?",
+    "opzioni": [
+     "$2^n$",
+     "$2^{n-1}$",
+     "$n!$",
+     "$n^2$"
+    ],
+    "spiegazione": "In ognuno degli $n-1$ punti interni si taglia o no: $2^{n-1}$ schemi, contro $\\Theta(n^2)$ passi della PD."
+   },
+   "en": {
+    "testo": "In how many ways can a rod of integer length $n$ be cut into pieces of integer length, if the order of the pieces matters?",
+    "opzioni": [
+     "$2^n$",
+     "$2^{n-1}$",
+     "$n!$",
+     "$n^2$"
+    ],
+    "spiegazione": "At each of the $n-1$ inner points one cuts or not: $2^{n-1}$ schemes, against $\\Theta(n^2)$ steps of the DP."
+   }
+  },
+  {
+   "id": "dp-f-298",
+   "livello": "teorema",
+   "capitolo": "dp-rod-cutting",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-rod-cutting/errori-tipici/#135-in-sintesi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-rod-cutting/typical-mistakes/#135-in-summary"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Dopo la PD per il taglio delle aste il vettore $s$ contiene, per ogni lunghezza $\\ell$, il primo pezzo scelto. Che cosa si ottiene, senza calcoli in più?",
+    "opzioni": [
+     "Una soluzione ottima per ogni lunghezza $\\ell\\le n$",
+     "Solo la soluzione per la lunghezza $n$",
+     "Tutte le soluzioni ottime",
+     "Un bound sul valore ottimo"
+    ],
+    "spiegazione": "Per ogni $\\ell$ si ripercorre $s[\\ell], s[\\ell-s[\\ell]],\\dots$ fino a $0$."
+   },
+   "en": {
+    "testo": "After the DP for rod cutting the vector $s$ holds, for each length $\\ell$, the first piece chosen. What is obtained, at no extra cost?",
+    "opzioni": [
+     "An optimal solution for every length $\\ell\\le n$",
+     "Only the solution for length $n$",
+     "All optimal solutions",
+     "A bound on the optimal value"
+    ],
+    "spiegazione": "For each $\\ell$ one follows $s[\\ell], s[\\ell-s[\\ell]],\\dots$ down to $0$."
+   }
+  },
+  {
+   "id": "dp-f-299",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#11-dividere-conquistare-combinare",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#11-divide-conquer-and-combine"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che tipo di algoritmo è un algoritmo di programmazione dinamica (PD)?",
+    "opzioni": [
+     "Un algoritmo di approssimazione",
+     "Un metodo di ricerca locale",
+     "Un algoritmo esatto",
+     "Un'euristica senza garanzia"
+    ],
+    "spiegazione": "La PD combina le soluzioni ottime dei sottoproblemi e trova una soluzione ottima: è un algoritmo esatto."
+   },
+   "en": {
+    "testo": "What kind of algorithm is a dynamic programming (DP) algorithm?",
+    "opzioni": [
+     "An approximation algorithm",
+     "A local search method",
+     "An exact algorithm",
+     "A heuristic without guarantee"
+    ],
+    "spiegazione": "DP combines the optimal solutions of the subproblems and finds an optimal solution: it is an exact algorithm."
+   }
+  },
+  {
+   "id": "dp-f-300",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#13-passi-per-progettare-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#13-steps-for-designing-a-dp-algorithm"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nell'approccio top-down con memoizzazione, che cosa fa una chiamata ricorsiva su un sottoproblema già risolto?",
+    "opzioni": [
+     "Interrompe l'algoritmo",
+     "Restituisce il valore salvato nella tabella",
+     "Ricalcola il valore da capo",
+     "Restituisce $0$"
+    ],
+    "spiegazione": "La tabella memorizza i valori già calcolati: una seconda chiamata li legge invece di ricalcolarli."
+   },
+   "en": {
+    "testo": "In the top-down approach with memoization, what does a recursive call on an already solved subproblem do?",
+    "opzioni": [
+     "It stops the algorithm",
+     "It returns the value stored in the table",
+     "It recomputes the value from scratch",
+     "It returns $0$"
+    ],
+    "spiegazione": "The table stores the values already computed: a second call reads them instead of recomputing them."
+   }
+  },
+  {
+   "id": "dp-f-301",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#13-passi-per-progettare-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#13-steps-for-designing-a-dp-algorithm"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quale differenza c'è fra l'approccio top-down e l'approccio bottom-up della PD?",
+    "opzioni": [
+     "Top-down parte dal problema e ricorre; bottom-up riempie la tabella dai casi base",
+     "Top-down è esatto, bottom-up è euristico",
+     "Bottom-up non usa la ricorrenza",
+     "Top-down non usa casi base"
+    ],
+    "spiegazione": "Usano la stessa ricorrenza e danno lo stesso valore; cambia solo l'ordine in cui si calcolano i sottoproblemi."
+   },
+   "en": {
+    "testo": "What is the difference between the top-down and the bottom-up approach of DP?",
+    "opzioni": [
+     "Top-down starts from the problem and recurs; bottom-up fills the table from the base cases",
+     "Top-down is exact, bottom-up is heuristic",
+     "Bottom-up does not use the recurrence",
+     "Top-down does not use base cases"
+    ],
+    "spiegazione": "They use the same recurrence and give the same value; only the order of computing the subproblems changes."
+   }
+  },
+  {
+   "id": "dp-f-302",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#sez-sec-dp-properties",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#sez-sec-dp-properties"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa vuol dire che un problema ha la sottostruttura ottima?",
+    "opzioni": [
+     "Ogni sottoproblema ha una soluzione unica",
+     "I sottoproblemi sono indipendenti",
+     "Il problema ha pochi sottoproblemi",
+     "Una soluzione ottima contiene soluzioni ottime dei suoi sottoproblemi"
+    ],
+    "spiegazione": "È la proprietà che permette di scrivere il valore ottimo con una ricorrenza sui valori ottimi dei sottoproblemi."
+   },
+   "en": {
+    "testo": "What does it mean that a problem has optimal substructure?",
+    "opzioni": [
+     "Every subproblem has a unique solution",
+     "The subproblems are independent",
+     "The problem has few subproblems",
+     "An optimal solution contains optimal solutions of its subproblems"
+    ],
+    "spiegazione": "It is the property that allows writing the optimal value with a recurrence on the optimal values of the subproblems."
+   }
+  },
+  {
+   "id": "dp-f-303",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#sez-sec-dp-properties",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#sez-sec-dp-properties"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che cosa vuol dire che un problema ha sottoproblemi sovrapposti?",
+    "opzioni": [
+     "Ogni sottoproblema compare una volta sola",
+     "I sottoproblemi sono di tipo diverso",
+     "Gli stessi sottoproblemi compaiono più volte nella ricorsione",
+     "I sottoproblemi hanno soluzioni comuni"
+    ],
+    "spiegazione": "È ciò che rende utile la tabella: ogni sottoproblema si calcola una volta e poi si riusa."
+   },
+   "en": {
+    "testo": "What does it mean that a problem has overlapping subproblems?",
+    "opzioni": [
+     "Each subproblem appears only once",
+     "The subproblems are of different types",
+     "The same subproblems appear several times in the recursion",
+     "The subproblems share solutions"
+    ],
+    "spiegazione": "It is what makes the table useful: each subproblem is computed once and then reused."
+   }
+  },
+  {
+   "id": "dp-f-304",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#14-gli-algoritmi-di-pd-di-questo-modulo",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#14-the-dp-algorithms-of-this-module"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Negli algoritmi di PD del corso, quali sono i due passi?",
+    "opzioni": [
+     "Il rilassamento lineare, poi l'arrotondamento",
+     "Il valore ottimo con la ricorrenza, poi una soluzione ottima dalla tabella aggiuntiva",
+     "Un bound inferiore, poi un bound superiore",
+     "Una soluzione euristica, poi la ricerca locale"
+    ],
+    "spiegazione": "Una ricorrenza con i suoi casi base dà il valore ottimo; una tabella aggiuntiva, letta a ritroso, dà una soluzione ottima."
+   },
+   "en": {
+    "testo": "In the DP algorithms of the course, what are the two steps?",
+    "opzioni": [
+     "The LP relaxation, then rounding",
+     "The optimal value by the recurrence, then an optimal solution from the additional table",
+     "A lower bound, then an upper bound",
+     "A heuristic solution, then local search"
+    ],
+    "spiegazione": "A recurrence with its base cases gives the optimal value; an additional table, read backwards, gives an optimal solution."
+   }
+  },
+  {
+   "id": "dp-f-305",
+   "livello": "facile",
+   "capitolo": "dp-principles",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-principles/#11-dividere-conquistare-combinare",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-principles/#11-divide-conquer-and-combine"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Calcolare i numeri di Fibonacci con la ricorsione semplice $F(n)=F(n-1)+F(n-2)$ richiede un tempo esponenziale. Che cosa cambia con la PD?",
+    "opzioni": [
+     "Ogni $F(k)$ si calcola una volta: $\\Theta(n)$ passi",
+     "Nulla: il tempo resta esponenziale",
+     "Il tempo diventa $\\Theta(\\log n)$ senza tabella",
+     "Il risultato cambia"
+    ],
+    "spiegazione": "I sottoproblemi $F(k)$ si ripetono molte volte nella ricorsione; con la tabella ciascuno si calcola una volta."
+   },
+   "en": {
+    "testo": "Computing the Fibonacci numbers with the plain recursion $F(n)=F(n-1)+F(n-2)$ takes exponential time. What changes with DP?",
+    "opzioni": [
+     "Each $F(k)$ is computed once: $\\Theta(n)$ steps",
+     "Nothing: the time stays exponential",
+     "The time becomes $\\Theta(\\log n)$ without table",
+     "The result changes"
+    ],
+    "spiegazione": "The subproblems $F(k)$ repeat many times in the recursion; with the table each one is computed once."
+   }
+  },
+  {
+   "id": "dp-f-306",
+   "livello": "facile",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/#1011-codifica-delle-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/#1011-encoding-of-feasible-solutions"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nel lot sizing senza capacità (ULS) con $m$ periodi, domande $d_t$, costi di setup, di produzione e di giacenza: che cosa si decide?",
+    "opzioni": [
+     "Quali oggetti mettere nello zaino",
+     "In che ordine visitare i periodi",
+     "Quante macchine usare",
+     "Quanto produrre in ogni periodo, soddisfacendo le domande a costo minimo"
+    ],
+    "spiegazione": "La soluzione è il vettore delle produzioni $(x_1,\\dots,x_m)$; le scorte seguono dalle produzioni e dalle domande."
+   },
+   "en": {
+    "testo": "In uncapacitated lot sizing (ULS) with $m$ periods, demands $d_t$, setup, production and holding costs: what is decided?",
+    "opzioni": [
+     "Which items to put in the knapsack",
+     "In which order to visit the periods",
+     "How many machines to use",
+     "How much to produce in each period, meeting the demands at minimum cost"
+    ],
+    "spiegazione": "The solution is the vector of productions $(x_1,\\dots,x_m)$; the inventories follow from productions and demands."
+   }
+  },
+  {
+   "id": "dp-f-307",
+   "livello": "facile",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/un-algoritmo-di-pd-per-l-uls-passo-1-e-passo-2/#1023-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/a-dp-algorithm-for-the-uls-step-1-and-step-2/#1023-number-of-steps"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella PD di Wagner e Whitin, che cosa rappresenta $c_{j,t}$?",
+    "opzioni": [
+     "La capacità del periodo $j$",
+     "Il valore ottimo dei primi $t$ periodi",
+     "Il costo di produrre nel periodo $j$ la domanda dei periodi $j,\\dots,t$",
+     "La domanda totale dei periodi $j,\\dots,t$"
+    ],
+    "spiegazione": "È il costo di un lotto: setup in $j$, produzione di $D_{j,t}$ e giacenza delle unità fino al loro periodo."
+   },
+   "en": {
+    "testo": "In the Wagner–Whitin DP, what does $c_{j,t}$ represent?",
+    "opzioni": [
+     "The capacity of period $j$",
+     "The optimal value of the first $t$ periods",
+     "The cost of producing in period $j$ the demand of periods $j,\\dots,t$",
+     "The total demand of periods $j,\\dots,t$"
+    ],
+    "spiegazione": "It is the cost of a run: setup in $j$, production of $D_{j,t}$ and holding of the units until their period."
+   }
+  },
+  {
+   "id": "dp-f-308",
+   "livello": "facile",
+   "capitolo": "dp-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-lot-sizing/un-algoritmo-di-pd-per-l-uls-passo-1-e-passo-2/#1023-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-lot-sizing/a-dp-algorithm-for-the-uls-step-1-and-step-2/#1023-number-of-steps"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nella PD di Wagner e Whitin si memorizza $r[t]$, il periodo dell'ultimo lotto che copre il periodo $t$. A che cosa serve?",
+    "opzioni": [
+     "A ordinare i periodi",
+     "A ricostruire a ritroso un piano di produzione ottimo",
+     "A calcolare le domande totali",
+     "A verificare le capacità"
+    ],
+    "spiegazione": "Da $t=m$ si legge il periodo $r[m]$ dell'ultimo lotto, poi si riparte da $r[m]-1$, fino al periodo $0$."
+   },
+   "en": {
+    "testo": "In the Wagner–Whitin DP one stores $r[t]$, the period of the last run covering period $t$. What is it for?",
+    "opzioni": [
+     "To sort the periods",
+     "To rebuild backwards an optimal production plan",
+     "To compute the total demands",
+     "To check the capacities"
+    ],
+    "spiegazione": "From $t=m$ one reads the period $r[m]$ of the last run, then restarts from $r[m]-1$, down to period $0$."
+   }
+  },
+  {
+   "id": "dp-f-309",
+   "livello": "facile",
+   "capitolo": "dp-capacitated-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-capacitated-lot-sizing/#111-notazione-modello-e-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-capacitated-lot-sizing/#111-notation-model-and-feasible-solutions"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Che cosa aggiunge il lot sizing capacitato (CLS) al lot sizing senza capacità?",
+    "opzioni": [
+     "Un limite $cap_t$ alla produzione di ogni periodo",
+     "Un limite alle scorte finali",
+     "Più prodotti",
+     "Domande incerte"
+    ],
+    "spiegazione": "Il vincolo $x_t\\le cap_t$ limita la produzione di ogni periodo."
+   },
+   "en": {
+    "testo": "What does capacitated lot sizing (CLS) add to uncapacitated lot sizing?",
+    "opzioni": [
+     "A limit $cap_t$ on the production of each period",
+     "A limit on the final inventories",
+     "More products",
+     "Uncertain demands"
+    ],
+    "spiegazione": "The constraint $x_t\\le cap_t$ limits the production of each period."
+   }
+  },
+  {
+   "id": "dp-f-310",
+   "livello": "facile",
+   "capitolo": "dp-capacitated-lot-sizing",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-capacitated-lot-sizing/#112-un-algoritmo-di-pd-per-il-cls",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-capacitated-lot-sizing/#112-a-dp-algorithm-for-the-cls"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella PD per il lot sizing capacitato, che cosa sceglie la ricorrenza $v(t,k)$ nel periodo $t$?",
+    "opzioni": [
+     "Il periodo dell'ultimo lotto",
+     "Quale prodotto fare",
+     "La capacità del periodo",
+     "La quantità $x$ prodotta nel periodo $t$"
+    ],
+    "spiegazione": "Dallo stato $(t,k)$ con scorta finale $k$ si prova ogni produzione $x\\le cap_t$ compatibile con la domanda $d_t$."
+   },
+   "en": {
+    "testo": "In the DP for capacitated lot sizing, what does the recurrence $v(t,k)$ choose in period $t$?",
+    "opzioni": [
+     "The period of the last run",
+     "Which product to make",
+     "The capacity of the period",
+     "The quantity $x$ produced in period $t$"
+    ],
+    "spiegazione": "From the state $(t,k)$ with final inventory $k$ every production $x\\le cap_t$ compatible with the demand $d_t$ is tried."
+   }
+  },
+  {
+   "id": "dp-f-311",
+   "livello": "facile",
+   "capitolo": "dp-coin-change",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-coin-change/#121-istanze-e-soluzioni-ammissibili",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-coin-change/#121-instances-and-feasible-solutions"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa chiede il problema del cambio monete (CCP)?",
+    "opzioni": [
+     "Il massimo numero di monete con valore al più $c$",
+     "Il numero di modi di formare $c$",
+     "La moneta più grande che entra in $c$",
+     "Il minimo numero di monete che formano esattamente l'importo $c$"
+    ],
+    "spiegazione": "Ogni taglio è disponibile in copie illimitate e il totale deve essere esattamente $c$."
+   },
+   "en": {
+    "testo": "What does the coin change problem (CCP) ask?",
+    "opzioni": [
+     "The maximum number of coins with value at most $c$",
+     "The number of ways to form $c$",
+     "The largest coin fitting into $c$",
+     "The minimum number of coins forming exactly the amount $c$"
+    ],
+    "spiegazione": "Each denomination is available in unlimited copies and the total must be exactly $c$."
+   }
+  },
+  {
+   "id": "dp-f-312",
+   "livello": "facile",
+   "capitolo": "dp-coin-change",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-coin-change/#122-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-coin-change/#122-a-dp-algorithm"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Tagli $\\{1,2,5\\}$, importo $11$. Quanto vale il minimo numero di monete $v(11)$?",
+    "opzioni": [
+     "$2$",
+     "$5$",
+     "$3$",
+     "$4$"
+    ],
+    "spiegazione": "$11=5+5+1$ con $3$ monete; con $2$ monete il massimo è $10$."
+   },
+   "en": {
+    "testo": "Denominations $\\{1,2,5\\}$, amount $11$. What is the minimum number of coins $v(11)$?",
+    "opzioni": [
+     "$2$",
+     "$5$",
+     "$3$",
+     "$4$"
+    ],
+    "spiegazione": "$11=5+5+1$ with $3$ coins; with $2$ coins the maximum is $10$."
+   }
+  },
+  {
+   "id": "dp-f-313",
+   "livello": "facile",
+   "capitolo": "dp-coin-change",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-coin-change/#122-un-algoritmo-di-pd",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-coin-change/#122-a-dp-algorithm"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Tagli $\\{4,6\\}$, importo $9$. Che cosa dà la PD per il cambio monete?",
+    "opzioni": [
+     "$v(9)=0$",
+     "$v(9)=+\\infty$: l'istanza è inammissibile",
+     "$v(9)=2$",
+     "$v(9)=3$"
+    ],
+    "spiegazione": "Con tagli pari si formano solo importi pari: $9$ non si può formare."
+   },
+   "en": {
+    "testo": "Denominations $\\{4,6\\}$, amount $9$. What does the DP for coin change give?",
+    "opzioni": [
+     "$v(9)=0$",
+     "$v(9)=+\\infty$: the instance is infeasible",
+     "$v(9)=2$",
+     "$v(9)=3$"
+    ],
+    "spiegazione": "With even denominations only even amounts can be formed: $9$ cannot be formed."
+   }
+  },
+  {
+   "id": "dp-f-314",
+   "livello": "facile",
+   "capitolo": "dp-rod-cutting",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-rod-cutting/un-primo-algoritmo-di-pd/#1321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-rod-cutting/a-first-dp-algorithm/#1321-number-of-steps"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Asta di lunghezza $4$, profitti $p_1=1$, $p_2=5$, $p_3=8$, $p_4=9$. Quanto vale il profitto massimo $v(4)$?",
+    "opzioni": [
+     "$10$",
+     "$9$",
+     "$8$",
+     "$11$"
+    ],
+    "spiegazione": "Due pezzi di lunghezza $2$ danno $5+5=10$; $3+1$ dà $9$ e l'asta intera $9$."
+   },
+   "en": {
+    "testo": "Rod of length $4$, profits $p_1=1$, $p_2=5$, $p_3=8$, $p_4=9$. What is the maximum profit $v(4)$?",
+    "opzioni": [
+     "$10$",
+     "$9$",
+     "$8$",
+     "$11$"
+    ],
+    "spiegazione": "Two pieces of length $2$ give $5+5=10$; $3+1$ gives $9$ and the whole rod $9$."
+   }
+  },
+  {
+   "id": "dp-f-315",
+   "livello": "facile",
+   "capitolo": "dp-rod-cutting",
+   "link": {
+    "it": "https://fabiofurini.github.io/programmazione-dinamica/dp-rod-cutting/un-primo-algoritmo-di-pd/#1321-numero-di-passi",
+    "en": "https://fabiofurini.github.io/dynamic-programming/dp-rod-cutting/a-first-dp-algorithm/#1321-number-of-steps"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nella PD per il taglio delle aste, perché $v(0)=0$?",
+    "opzioni": [
+     "Perché $p_0=0$ è un dato",
+     "Perché l'asta va tagliata almeno una volta",
+     "Perché il profitto massimo è $0$",
+     "Un'asta di lunghezza $0$ non dà pezzi né profitto"
+    ],
+    "spiegazione": "È il caso base: senza asta non c'è nulla da vendere."
+   },
+   "en": {
+    "testo": "In the DP for rod cutting, why is $v(0)=0$?",
+    "opzioni": [
+     "Because $p_0=0$ is given",
+     "Because the rod must be cut at least once",
+     "Because the maximum profit is $0$",
+     "A rod of length $0$ gives no pieces and no profit"
+    ],
+    "spiegazione": "It is the base case: without a rod there is nothing to sell."
+   }
   }
  ]
 }
