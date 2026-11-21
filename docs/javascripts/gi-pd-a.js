@@ -3,7 +3,7 @@
  *   oc-dp-knapsack   problemi di zaino (KP, UKP, BKP, SSP): la tabella della programmazione dinamica si riempie una
  *                    cella alla volta, poi la ricostruzione della soluzione dall'ultima cella
  *
- * Estratta il 2026-11-21 da gi-oc-a.js di Ottimizzazione combinatoria (la chiave dell'app resta oc-dp-knapsack).
+ * Estratta il 2026-11-21 da gi-oc-a.js di Problemi di ottimizzazione combinatoria (la chiave dell'app resta oc-dp-knapsack).
  * Notazione del corso: capacità c, profitti p_j, pesi w_j, v(j,k) = valore ottimo con i primi j oggetti e capacità k;
  * istanza di riferimento KP p = (10, 7, 6, 4), w = (5, 4, 3, 3), c = 9.
  * Le funzioni di calcolo sono anche in window.GI_PD_A, per le prove.

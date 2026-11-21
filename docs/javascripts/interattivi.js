@@ -1,4 +1,4 @@
-/* Grafici interattivi della collana (motore copiato da Programmazione lineare per Ottimizzazione combinatoria; JSXGraph).
+/* Grafici interattivi della collana (motore copiato da Programmazione lineare per Problemi di ottimizzazione combinatoria; JSXGraph).
  *
  * Un solo file per le due lingue: le stringhe dell'interfaccia e il separatore
  * decimale si scelgono da <html lang="…"> (it: virgola, en: punto). Il motore

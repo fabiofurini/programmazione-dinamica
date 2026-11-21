@@ -5,7 +5,7 @@
  *                     sizing problem»), sulla matrice c[j][t] e sulla rete dei lotti di produzione (nodi 0..m,
  *                     arco (j-1, t) di costo c_{j,t}); poi la ricostruzione con r[t] (DP_WW_SolComputation)
  *
- * Estratta il 2026-11-21 da gi-oc-e.js di Ottimizzazione combinatoria (la chiave dell'app resta oc-wagner-whitin).
+ * Estratta il 2026-11-21 da gi-oc-e.js di Problemi di ottimizzazione combinatoria (la chiave dell'app resta oc-wagner-whitin).
  * Notazione del corso: d_t, sc_t, vc_t, hc_t, D_{j,t}, c_{j,t}, v(t), r[t]. Le funzioni di calcolo sono in
  * window.GI_PD_B. Verde riservato ai tagli: qui non si usa.
  */

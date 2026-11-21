@@ -6,7 +6,7 @@ title: "PD per il problema dello zaino 0/1"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Problemi di zaino · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Zaino 0/1 (KP)](../esercizi/dp-knapsack.md) · [:material-gesture-tap: App: Tabelle della PD per i problemi di zaino](../laboratorio/tabella-pd-zaino.md)
+**Parte 2 · Problemi di zaino · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide (1/2)](../pdf/slide-dp-knapsack-1.pdf) · [:material-presentation: Slide (2/2)](../pdf/slide-dp-knapsack-2.pdf) · [:material-pencil: Esercizi: Zaino 0/1 (KP)](../esercizi/dp-knapsack.md) · [:material-gesture-tap: App: Tabelle della PD per i problemi di zaino](../laboratorio/tabella-pd-zaino.md)
 
 </div>
 
@@ -14,15 +14,15 @@ title: "PD per il problema dello zaino 0/1"
 
     - Da questo modulo, il capitolo [«Principi della programmazione dinamica»](../dp-principles/index.md): sottostruttura ottima, sottoproblemi sovrapposti, relazioni di ricorrenza, casi base e approcci top-down e bottom-up.
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/): il problema dello zaino 0/1 (KP), la codifica binaria di una soluzione e i $2^n$ sottoinsiemi di oggetti.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/): il problema dello zaino 0/1 (KP), la codifica binaria di una soluzione e i $2^n$ sottoinsiemi di oggetti.
 
     - Dal modulo <em>Algoritmi</em>: come si legge lo [pseudocodice (Capitolo 2)](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/) e [la dimensione dell'input di un algoritmo (Capitolo 11)](https://fabiofurini.github.io/algoritmi/analisi/11-dimensione-input/) (serve a spiegare perché $\Theta(nc)$ è pseudopolinomiale).
 
 !!! nota "Dove eravamo"
 
-    - <strong>Come problema</strong>: il KP, le sue istanze e i $2^n$ sottoinsiemi (capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/) del modulo <em>Ottimizzazione combinatoria</em>).
+    - <strong>Come problema</strong>: il KP, le sue istanze e i $2^n$ sottoinsiemi (capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/) del modulo <em>Problemi di ottimizzazione combinatoria</em>).
 
-    - <strong>Come modello</strong>: il modello PLI, il suo rilassamento lineare e i bound duali (capitolo [«Formulazioni dei problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/knapsack-formulations/) del modulo <em>Ottimizzazione combinatoria</em>).
+    - <strong>Come modello</strong>: il modello PLI, il suo rilassamento lineare e i bound duali (capitolo [«Formulazioni dei problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/knapsack-formulations/) del modulo <em>Problemi di ottimizzazione combinatoria</em>).
 
     - <strong>Ora, come tabella</strong>: l'algoritmo di PD calcola esattamente il valore ottimo, senza modello e senza solver.
 

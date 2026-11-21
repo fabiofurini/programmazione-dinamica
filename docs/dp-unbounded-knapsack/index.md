@@ -6,7 +6,7 @@ title: "PD per il problema dello zaino illimitato"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Problemi di zaino · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Zaino illimitato (UKP)](../esercizi/dp-unbounded-knapsack.md) · [:material-gesture-tap: App: Tabelle della PD per i problemi di zaino](../laboratorio/tabella-pd-zaino.md)
+**Parte 2 · Problemi di zaino · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-unbounded-knapsack.pdf) · [:material-pencil: Esercizi: Zaino illimitato (UKP)](../esercizi/dp-unbounded-knapsack.md) · [:material-gesture-tap: App: Tabelle della PD per i problemi di zaino](../laboratorio/tabella-pd-zaino.md)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Un algoritmo di PD per l'ULS: Passo 1 e Passo 2"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Problemi di lot sizing · Capitolo 10** · [:material-book-open-variant: Capitolo 10: Lot sizing senza capacità (ULS)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Lot sizing senza capacità (ULS)](../esercizi/dp-lot-sizing.md) · [:material-gesture-tap: App: Wagner-Whitin per il lot sizing senza capacità](../laboratorio/wagner-whitin-lot-sizing.md)
+**Parte 3 · Problemi di lot sizing · Capitolo 10** · [:material-book-open-variant: Capitolo 10: Lot sizing senza capacità (ULS)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-lot-sizing.pdf) · [:material-pencil: Esercizi: Lot sizing senza capacità (ULS)](../esercizi/dp-lot-sizing.md) · [:material-gesture-tap: App: Wagner-Whitin per il lot sizing senza capacità](../laboratorio/wagner-whitin-lot-sizing.md)
 
 </div>
 
@@ -366,7 +366,7 @@ title: "Un algoritmo di PD per l'ULS: Passo 1 e Passo 2"
 
     - Dopo l'esecuzione dell'algoritmo di PD, il vettore ${v}$ contiene il valore ottimo ${v}[t]$ per ogni insieme di periodi $\{1,\dots,t\}$.
 
-    - <em>Osservazione (cammino minimo).</em> La formula $\eqref{eq:ww}$ calcola un cammino minimo in una rete con nodi $0,1,\dots,m$ e un arco dal nodo $j-1$ al nodo $t$, di costo $c_{j,t}$, per ogni $j\le t$. Il valore $v(t)$ è la lunghezza di un cammino minimo dal nodo $0$ al nodo $t$. È la formulazione a cammino minimo del capitolo [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Ottimizzazione combinatoria</em>, senza le capacità: un arco è un lotto di produzione.
+    - <em>Osservazione (cammino minimo).</em> La formula $\eqref{eq:ww}$ calcola un cammino minimo in una rete con nodi $0,1,\dots,m$ e un arco dal nodo $j-1$ al nodo $t$, di costo $c_{j,t}$, per ogni $j\le t$. Il valore $v(t)$ è la lunghezza di un cammino minimo dal nodo $0$ al nodo $t$. È la formulazione a cammino minimo del capitolo [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Problemi di ottimizzazione combinatoria</em>, senza le capacità: un arco è un lotto di produzione.
 
 - <u>Passo 2</u>: calcolo di una soluzione ottima
 

@@ -6,13 +6,13 @@ title: "PD per il problema del lot sizing senza capacità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Problemi di lot sizing · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Lot sizing senza capacità (ULS)](../esercizi/dp-lot-sizing.md) · [:material-gesture-tap: App: Wagner-Whitin per il lot sizing senza capacità](../laboratorio/wagner-whitin-lot-sizing.md)
+**Parte 3 · Problemi di lot sizing · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-lot-sizing.pdf) · [:material-pencil: Esercizi: Lot sizing senza capacità (ULS)](../esercizi/dp-lot-sizing.md) · [:material-gesture-tap: App: Wagner-Whitin per il lot sizing senza capacità](../laboratorio/wagner-whitin-lot-sizing.md)
 
 </div>
 
 !!! nota "Prerequisiti"
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, i capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/): il problema a un solo prodotto, la sua istanza di riferimento e il suo modello PLI con le variabili $x_t$, $s_t$, $y_t$.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, i capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/): il problema a un solo prodotto, la sua istanza di riferimento e il suo modello PLI con le variabili $x_t$, $s_t$, $y_t$.
 
     - Da questo modulo, il capitolo [«Principi della programmazione dinamica»](../dp-principles/index.md) e gli algoritmi di PD dei capitoli precedenti: ricorrenza, casi base, tabella di lookup e ricostruzione di una soluzione.
 
@@ -20,7 +20,7 @@ title: "PD per il problema del lot sizing senza capacità"
 
 !!! nota "Dove eravamo"
 
-    - <strong>Come problema e come modello</strong>: il lot sizing a un solo prodotto e le sue formulazioni PLI (capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Ottimizzazione combinatoria</em>).
+    - <strong>Come problema e come modello</strong>: il lot sizing a un solo prodotto e le sue formulazioni PLI (capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Problemi di ottimizzazione combinatoria</em>).
 
     - <strong>Ora, come tabella</strong>: l'algoritmo di PD di Wagner e Whitin dà il valore ottimo del problema senza capacità in $\Theta(m^2)$ passi.
 
@@ -50,7 +50,7 @@ Il problema di questo capitolo è il [problema di lot sizing senza capacità (UL
 
     la domanda totale dei periodi $j,j+1,\dots,t$, con $D_{j,t}=0$ se $j>t$.
 
-- Il modello PLI è il modello $\mathrm{ILP}_{\mathrm{ULS}}$ del capitolo [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Ottimizzazione combinatoria</em>, sezione «Modelli PLI per le varianti»: il modello $\mathrm{ILP}_{\mathrm{CLSP}}$ senza i vincoli di capacità e con il valore di big-M $D_{t,m}$ del periodo $t$, la domanda totale dei periodi rimanenti. Le sue variabili sono la produzione $x_t$, la scorta $s_t$ alla fine del periodo $t$ e il setup $y_t\in\{0,1\}$, per ogni periodo $t \in T$.
+- Il modello PLI è il modello $\mathrm{ILP}_{\mathrm{ULS}}$ del capitolo [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Problemi di ottimizzazione combinatoria</em>, sezione «Modelli PLI per le varianti»: il modello $\mathrm{ILP}_{\mathrm{CLSP}}$ senza i vincoli di capacità e con il valore di big-M $D_{t,m}$ del periodo $t$, la domanda totale dei periodi rimanenti. Le sue variabili sono la produzione $x_t$, la scorta $s_t$ alla fine del periodo $t$ e il setup $y_t\in\{0,1\}$, per ogni periodo $t \in T$.
 
 !!! chiave ""
 
@@ -99,7 +99,7 @@ Il problema di questo capitolo è il [problema di lot sizing senza capacità (UL
     \end{array}
     $$
 
-    Chiamiamo questa istanza dell'ULS <span style="color:#1971c2">[Esempio 10.1](#box-1-texuls1)</span>. È l'istanza di riferimento del capitolo [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) del modulo <em>Ottimizzazione combinatoria</em>, contata in singoli pezzi invece che in decine e senza le capacità (costo di setup $50$, costo di mantenimento a scorta $1$, nessun costo variabile di produzione).
+    Chiamiamo questa istanza dell'ULS <span style="color:#1971c2">[Esempio 10.1](#box-1-texuls1)</span>. È l'istanza di riferimento del capitolo [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) del modulo <em>Problemi di ottimizzazione combinatoria</em>, contata in singoli pezzi invece che in decine e senza le capacità (costo di setup $50$, costo di mantenimento a scorta $1$, nessun costo variabile di produzione).
 
 ### 10.1.1 Codifica delle soluzioni ammissibili
 

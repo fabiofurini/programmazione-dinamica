@@ -6,7 +6,7 @@ title: "PD per il problema dello zaino con setup"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Problemi di zaino · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Zaino con setup (KPS)](../esercizi/dp-knapsack-setups.md)
+**Parte 2 · Problemi di zaino · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-knapsack-setups.pdf) · [:material-pencil: Esercizi: Zaino con setup (KPS)](../esercizi/dp-knapsack-setups.md)
 
 </div>
 
@@ -14,7 +14,7 @@ title: "PD per il problema dello zaino con setup"
 
     - Da questo modulo, il capitolo [«PD per il problema dello zaino 0/1»](../dp-knapsack/index.md): la ricorrenza $v(j,k)$ del problema dello zaino 0/1 (KP) su oggetti e capacità, la matrice $s$ delle decisioni e la ricostruzione di una soluzione.
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-con-setup/): il problema dello zaino con setup, le sue classi, i costi di setup $f_h$ e i pesi di setup $s_h$.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-con-setup/): il problema dello zaino con setup, le sue classi, i costi di setup $f_h$ e i pesi di setup $s_h$.
 
     - Dal modulo <em>Algoritmi</em>: [le convenzioni dello pseudocodice (Capitolo 2)](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/) e [la dimensione dell'input (Capitolo 11)](https://fabiofurini.github.io/algoritmi/analisi/11-dimensione-input/).
 

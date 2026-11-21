@@ -6,7 +6,7 @@ title: "Errori tipici · In sintesi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Problemi di lot sizing · Capitolo 10** · [:material-book-open-variant: Capitolo 10: Lot sizing senza capacità (ULS)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Lot sizing senza capacità (ULS)](../esercizi/dp-lot-sizing.md) · [:material-gesture-tap: App: Wagner-Whitin per il lot sizing senza capacità](../laboratorio/wagner-whitin-lot-sizing.md)
+**Parte 3 · Problemi di lot sizing · Capitolo 10** · [:material-book-open-variant: Capitolo 10: Lot sizing senza capacità (ULS)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-lot-sizing.pdf) · [:material-pencil: Esercizi: Lot sizing senza capacità (ULS)](../esercizi/dp-lot-sizing.md) · [:material-gesture-tap: App: Wagner-Whitin per il lot sizing senza capacità](../laboratorio/wagner-whitin-lot-sizing.md)
 
 </div>
 

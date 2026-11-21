@@ -6,7 +6,7 @@ title: "Errori tipici · In sintesi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Problemi di zaino · Capitolo 2** · [:material-book-open-variant: Capitolo 2: Zaino 0/1 (KP)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Zaino 0/1 (KP)](../esercizi/dp-knapsack.md) · [:material-gesture-tap: App: Tabelle della PD per i problemi di zaino](../laboratorio/tabella-pd-zaino.md)
+**Parte 2 · Problemi di zaino · Capitolo 2** · [:material-book-open-variant: Capitolo 2: Zaino 0/1 (KP)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide (1/2)](../pdf/slide-dp-knapsack-1.pdf) · [:material-presentation: Slide (2/2)](../pdf/slide-dp-knapsack-2.pdf) · [:material-pencil: Esercizi: Zaino 0/1 (KP)](../esercizi/dp-knapsack.md) · [:material-gesture-tap: App: Tabelle della PD per i problemi di zaino](../laboratorio/tabella-pd-zaino.md)
 
 </div>
 

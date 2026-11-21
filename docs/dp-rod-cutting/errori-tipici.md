@@ -6,7 +6,7 @@ title: "Errori tipici · In sintesi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Problemi misti · Capitolo 13** · [:material-book-open-variant: Capitolo 13: Taglio delle aste (RCP)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Taglio delle aste (RCP)](../esercizi/dp-rod-cutting.md)
+**Parte 4 · Problemi misti · Capitolo 13** · [:material-book-open-variant: Capitolo 13: Taglio delle aste (RCP)](index.md) · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-rod-cutting.pdf) · [:material-pencil: Esercizi: Taglio delle aste (RCP)](../esercizi/dp-rod-cutting.md)
 
 </div>
 

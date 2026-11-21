@@ -5,7 +5,7 @@
 
 - **Sito e PDF.** Ogni capitolo del sito è un capitolo della dispensa, con gli stessi numeri e gli stessi colori; i capitoli lunghi sono divisi in una pagina per sezione.
 - **In testa a ogni capitolo** la barra con la parte, il PDF della dispensa, le slide, gli esercizi e le app del capitolo; in fondo, il link agli esercizi.
-- **I problemi.** La definizione di ogni problema sta nella sua pagina del corso [Ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/): ogni capitolo comincia con il link.
+- **I problemi.** La definizione di ogni problema sta nella sua pagina del corso [Problemi di ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/): ogni capitolo comincia con il link.
 
 I box hanno gli stessi colori della dispensa:
 

@@ -1,5 +1,5 @@
 // Autovalutazione — domande generate del modulo «Programmazione dinamica» (dynamic-programming).
-// Portate il 2026-11-21 da Ottimizzazione combinatoria (i generatori dei capitoli dp-*, con gli aiuti che usano).
+// Portate il 2026-11-21 da Problemi di ottimizzazione combinatoria (i generatori dei capitoli dp-*, con gli aiuti che usano).
 // Formato: QUIZ_SPEC.md. Ogni generatore riceve rng() in [0,1) e la lingua ("it" | "en") e restituisce
 // { testo, opzioni[4], corretta, spiegazione, _v }. Il campo _v (dati dell'istanza e valori delle opzioni)
 // serve solo al gemello di verifica in Python (quiz/verifica/): il motore lo ignora.

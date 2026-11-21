@@ -6,7 +6,7 @@ title: "PD per il problema dello zaino a scelta multipla"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Problemi di zaino · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Zaino a scelta multipla (MCKP)](../esercizi/dp-multiple-choice-knapsack.md)
+**Parte 2 · Problemi di zaino · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-multiple-choice-knapsack.pdf) · [:material-pencil: Esercizi: Zaino a scelta multipla (MCKP)](../esercizi/dp-multiple-choice-knapsack.md)
 
 </div>
 
@@ -14,7 +14,7 @@ title: "PD per il problema dello zaino a scelta multipla"
 
     - Da questo modulo, il capitolo [«PD per il problema dello zaino 0/1»](../dp-knapsack/index.md): la ricorrenza $v(j,k)$ del problema dello zaino 0/1 (KP) su oggetti e capacità, la matrice $s$ delle decisioni e la ricostruzione di una soluzione.
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-a-scelta-multipla/): il problema dello zaino a scelta multipla, le sue classi $\mathscr{J}_h$ e la sua condizione di ammissibilità.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-a-scelta-multipla/): il problema dello zaino a scelta multipla, le sue classi $\mathscr{J}_h$ e la sua condizione di ammissibilità.
 
     - Dal modulo <em>Algoritmi</em>: [le convenzioni dello pseudocodice (Capitolo 2)](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/) e [la dimensione dell'input (Capitolo 11)](https://fabiofurini.github.io/algoritmi/analisi/11-dimensione-input/).
 

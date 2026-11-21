@@ -6,15 +6,15 @@ title: "Principi della programmazione dinamica"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Principi · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Principi](../esercizi/dp-principles.md)
+**Parte 1 · Principi · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-principles.pdf) · [:material-pencil: Esercizi: Principi](../esercizi/dp-principles.md)
 
 </div>
 
 !!! nota "Prerequisiti"
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, il capitolo [«Problemi di ottimizzazione combinatoria»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/combinatorial-optimization/): i problemi di ottimizzazione combinatoria, le loro soluzioni ammissibili e il fatto che il loro numero cresce in modo esponenziale.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, il capitolo [«Ottimizzazione combinatoria: definizioni»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/combinatorial-optimization/): i problemi di ottimizzazione combinatoria, le loro soluzioni ammissibili e il fatto che il loro numero cresce in modo esponenziale.
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/): il problema dello zaino 0/1 (KP), l'esempio guida degli algoritmi di PD.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, il capitolo [«Problemi di zaino»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/): il problema dello zaino 0/1 (KP), l'esempio guida degli algoritmi di PD.
 
     - Dal modulo <em>Algoritmi</em>: [pseudocodice (Capitolo 2)](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/), [ricorsione (Capitolo 14)](https://fabiofurini.github.io/algoritmi/ricorsione/14-ricorsione/) e la crescita del tempo di esecuzione di un algoritmo ([Capitolo 10 «Crescita asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/10-crescita-asintotica/)).
 

@@ -1,4 +1,4 @@
-/* Laboratorio di «Programmazione dinamica / Dynamic Programming» (da Ottimizzazione combinatoria): strumenti comuni delle ricette.
+/* Laboratorio di «Programmazione dinamica / Dynamic Programming» (da Problemi di ottimizzazione combinatoria): strumenti comuni delle ricette.
  *
  * Si carica dopo interattivi.js (window.GI) e gi-comune.js (window.GI_MIP) e prima delle ricette
  * gi-pd-a.js, gi-pd-b.js, che li trovano in window.GI_OC. Vengono dal laboratorio di Modellazione MIP

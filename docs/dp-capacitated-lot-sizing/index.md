@@ -6,15 +6,15 @@ title: "PD per il problema del lot sizing capacitato"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Problemi di lot sizing · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-pencil: Esercizi: Lot sizing capacitato (CLS)](../esercizi/dp-capacitated-lot-sizing.md)
+**Parte 3 · Problemi di lot sizing · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-programmazione-dinamica.pdf) · [:material-presentation: Slide](../pdf/slide-dp-capacitated-lot-sizing.pdf) · [:material-pencil: Esercizi: Lot sizing capacitato (CLS)](../esercizi/dp-capacitated-lot-sizing.md)
 
 </div>
 
 !!! nota "Prerequisiti"
 
-    - Da questo modulo, il capitolo [«PD per il problema di lot sizing senza capacità»](../dp-lot-sizing/index.md): le domande totali $D_{j,t}$, la codifica di un piano di produzione e la sua rete, la proprietà zero-inventory ordering, e l'istanza del suo Esempio 10.1.
+    - Da questo modulo, il capitolo [«PD per il problema del lot sizing senza capacità»](../dp-lot-sizing/index.md): le domande totali $D_{j,t}$, la codifica di un piano di produzione e la sua rete, la proprietà zero-inventory ordering, e l'istanza del suo Esempio 10.1.
 
-    - Dal modulo <em>Ottimizzazione combinatoria</em>, i capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/il-problema-del-lot-sizing-capacitato/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/): il problema capacitato, la sua istanza di riferimento, e il suo modello PLI con le variabili $x_t$, $s_t$, $y_t$.
+    - Dal modulo <em>Problemi di ottimizzazione combinatoria</em>, i capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/il-problema-del-lot-sizing-capacitato/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/): il problema capacitato, la sua istanza di riferimento, e il suo modello PLI con le variabili $x_t$, $s_t$, $y_t$.
 
     - Da questo modulo, il capitolo [«Principi della programmazione dinamica»](../dp-principles/index.md): ricorrenza, casi base, tabella di lookup e ricostruzione di una soluzione.
 
@@ -22,9 +22,9 @@ title: "PD per il problema del lot sizing capacitato"
 
 !!! nota "Dove eravamo"
 
-    - <strong>Come problema e come modello</strong>: il problema di lot sizing capacitato e le sue formulazioni PLI (capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Ottimizzazione combinatoria</em>).
+    - <strong>Come problema e come modello</strong>: il problema di lot sizing capacitato e le sue formulazioni PLI (capitoli [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) e [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Problemi di ottimizzazione combinatoria</em>).
 
-    - <strong>Come tabella, senza capacità</strong>: l'algoritmo di PD di Wagner e Whitin del Capitolo 10 «PD per il problema di lot sizing senza capacità», sui lotti di produzione, in $\Theta(m^2)$ passi.
+    - <strong>Come tabella, senza capacità</strong>: l'algoritmo di PD di Wagner e Whitin del Capitolo 10 [«PD per il problema del lot sizing senza capacità»](../dp-lot-sizing/index.md), sui lotti di produzione, in $\Theta(m^2)$ passi.
 
     - <strong>Ora, con le capacità</strong>: un algoritmo di PD sulle coppie (periodo, scorta), che è pseudo-polinomiale.
 
@@ -46,7 +46,7 @@ Il problema di questo capitolo è il [problema di lot sizing capacitato (CLS)](h
 
 ## 11.1 Notazione, modello e soluzioni ammissibili
 
-- Come nel [Capitolo 10 «PD per il problema di lot sizing senza capacità»](../dp-lot-sizing/index.md), per ogni $j,t \in T$ indichiamo con
+- Come nel [Capitolo 10 «PD per il problema del lot sizing senza capacità»](../dp-lot-sizing/index.md), per ogni $j,t \in T$ indichiamo con
 
     $$
     D_{j,t}=\sum_{k=j}^{t} d_k
@@ -54,19 +54,19 @@ Il problema di questo capitolo è il [problema di lot sizing capacitato (CLS)](h
 
     la domanda totale dei periodi $j,j+1,\dots,t$, con $D_{j,t}=0$ se $j>t$.
 
-- Il modello PLI è il modello $\mathrm{ILP}_{\mathrm{CLSP}}$ del capitolo [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Ottimizzazione combinatoria</em>, con il valore di big-M $\min\{cap_t, D_{t,m}\}$ del periodo $t$: è il modello $\mathrm{ILP}_{\mathrm{ULS}}$ con i vincoli aggiuntivi $x_t\le cap_t$, per ogni $t\in T$.
+- Il modello PLI è il modello $\mathrm{ILP}_{\mathrm{CLSP}}$ del capitolo [«Formulazioni dei problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/formulazioni/lot-sizing-formulations/) del modulo <em>Problemi di ottimizzazione combinatoria</em>, con il valore di big-M $\min\{cap_t, D_{t,m}\}$ del periodo $t$: è il modello $\mathrm{ILP}_{\mathrm{ULS}}$ con i vincoli aggiuntivi $x_t\le cap_t$, per ogni $t\in T$.
 
 - Una soluzione ammissibile si codifica con lo stesso vettore $(x_1,x_2,\dots,x_m)$ dell'ULS, con le scorte $s_t=\sum_{j=1}^{t} x_j-D_{1,t}$, e con il requisito aggiuntivo $x_t \le cap_t$ per ogni $t\in T$.
 
 - La <strong>proprietà zero-inventory ordering non vale</strong> per il CLS: un periodo può dover produrre mentre ci sono ancora unità in scorta, perché la capacità non permette di produrre tutto nel periodo in cui sarebbe più economico.
 
-- La proprietà, e l'algoritmo di PD sui lotti di produzione che si basa su di essa, sono quelli del [Capitolo 10 «PD per il problema di lot sizing senza capacità»](../dp-lot-sizing/index.md).
+- La proprietà, e l'algoritmo di PD sui lotti di produzione che si basa su di essa, sono quelli del [Capitolo 10 «PD per il problema del lot sizing senza capacità»](../dp-lot-sizing/index.md).
 
 <a id="box-1-texcls1"></a>
 
 !!! esempio "Esempio 11.1: lot sizing capacitato"
 
-    Consideriamo l'istanza senza capacità dell'Esempio 10.1 del [Capitolo 10 «PD per il problema di lot sizing senza capacità»](../dp-lot-sizing/index.md), misurata in unità di $10$ prodotti (quindi il costo di mantenimento è $10$ per unità), con una capacità costante di $4$ unità per periodo:
+    Consideriamo l'istanza senza capacità dell'Esempio 10.1 del [Capitolo 10 «PD per il problema del lot sizing senza capacità»](../dp-lot-sizing/index.md), misurata in unità di $10$ prodotti (quindi il costo di mantenimento è $10$ per unità), con una capacità costante di $4$ unità per periodo:
 
     $$
     \begin{array}{l|rrrrr}
@@ -80,7 +80,7 @@ Il problema di questo capitolo è il [problema di lot sizing capacitato (CLS)](h
     \end{array}
     $$
 
-    Chiamiamo questa istanza del CLS <span style="color:#1971c2">[Esempio 11.1](#box-1-texcls1)</span>: è l'istanza di riferimento del capitolo [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) del modulo <em>Ottimizzazione combinatoria</em>. La soluzione ottima dell'istanza senza capacità, in unità di $10$, è il vettore $(3,\allowbreak 0,\allowbreak 8,\allowbreak 0,\allowbreak 0)$, di costo $170$: non è ammissibile per l'<span style="color:#1971c2">[Esempio 11.1](#box-1-texcls1)</span>, poiché il periodo $3$ produce più di $4$ unità.
+    Chiamiamo questa istanza del CLS <span style="color:#1971c2">[Esempio 11.1](#box-1-texcls1)</span>: è l'istanza di riferimento del capitolo [«Problemi di lot sizing»](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/) del modulo <em>Problemi di ottimizzazione combinatoria</em>. La soluzione ottima dell'istanza senza capacità, in unità di $10$, è il vettore $(3,\allowbreak 0,\allowbreak 8,\allowbreak 0,\allowbreak 0)$, di costo $170$: non è ammissibile per l'<span style="color:#1971c2">[Esempio 11.1](#box-1-texcls1)</span>, poiché il periodo $3$ produce più di $4$ unità.
 
 ## 11.2 Un algoritmo di PD per il CLS
 
