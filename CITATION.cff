@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+title: "Programmazione dinamica: online lecture notes with worked exercises"
+abstract: >-
+  The lecture notes of the Programmazione dinamica course — the principles of dynamic
+  programming and DP algorithms for knapsack problems (0/1, unbounded, bounded,
+  subset sum, multiple-choice, multidimensional, with setups, multiple
+  knapsack), lot sizing, coin change and rod cutting — with definitions,
+  results and proofs, worked examples, exercises with solutions and
+  interactive apps.
+authors:
+  - family-names: Furini
+    given-names: Fabio
+    email: fabio.furini@uniroma1.it
+    affiliation: "DIAG, Sapienza University of Rome"
+url: "https://fabiofurini.github.io/programmazione-dinamica/"
+repository-code: "https://github.com/fabiofurini/programmazione-dinamica"
+license:
+  - CC-BY-4.0
+  - MIT
+date-released: 2026-11-21
+keywords:
+  - dynamic programming
+  - knapsack problems
+  - lot sizing
+  - combinatorial optimization
+  - operations research
+  - teaching material

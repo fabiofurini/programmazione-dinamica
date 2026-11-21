@@ -1,0 +1,203 @@
+# Modello di mkdocs.yml (italiano): lo usa genera_sito.py, che scrive mkdocs.yml.
+# Non modificare mkdocs.yml a mano.
+site_name: Programmazione dinamica · Fabio Furini
+site_description: >-
+  Dispense di programmazione dinamica: principi, algoritmi di PD per i problemi di zaino 0/1, illimitato, limitato, a scelta multipla, multidimensionale e degli zaini multipli, subset sum, zaino con setup, lot sizing senza capacità e capacitato, cambio monete e taglio delle aste, con esercizi e app interattive.
+site_author: Fabio Furini
+site_url: https://fabiofurini.github.io/programmazione-dinamica/
+repo_url: https://github.com/fabiofurini/programmazione-dinamica
+copyright: >-
+  &copy; 2026 Fabio Furini — testi e figure con licenza
+  <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC BY 4.0</a>,
+  codice con licenza
+  <a href="https://github.com/fabiofurini/programmazione-dinamica/blob/main/LICENSE-CODE">MIT</a>
+
+theme:
+  name: material
+  language: it
+  icon:
+    logo: material/dots-grid
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Tema scuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Tema chiaro
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+# le pagine delle singole app non stanno nel menu: il laboratorio è una voce sola
+not_in_nav: |
+  /laboratorio/*.md
+  !/laboratorio/index.md
+
+plugins:
+  - search:
+      lang: it
+
+extra:
+  social:
+    - icon: material/web
+      link: https://fabiofurini.github.io/
+      name: Fabio Furini — sito personale
+    - icon: material/school
+      link: https://www.diag.uniroma1.it/
+      name: DIAG — Sapienza Università di Roma
+    - icon: fontawesome/brands/github
+      link: https://github.com/fabiofurini
+      name: GitHub
+    - icon: material/chart-timeline-variant
+      link: https://fabiofurini.github.io/laboratorio-ricerca-operativa/
+      name: Laboratorio di Ricerca Operativa
+    - icon: material/vector-triangle
+      link: https://fabiofurini.github.io/programmazione-lineare/
+      name: Programmazione lineare
+    - icon: material/vector-polygon
+      link: https://fabiofurini.github.io/modellazione-mip/
+      name: Modellazione MIP
+    - icon: material/vector-polyline
+      link: https://fabiofurini.github.io/programmazione-lineare-intera/
+      name: Programmazione lineare intera
+    - icon: material/math-integral
+      link: https://fabiofurini.github.io/analisi-matematica-1/
+      name: Analisi Matematica 1
+    - icon: material/matrix
+      link: https://fabiofurini.github.io/algebra-lineare/
+      name: Algebra lineare
+    - icon: material/chart-bell-curve
+      link: https://fabiofurini.github.io/ottimizzazione-convessa/
+      name: Ottimizzazione convessa
+    - icon: material/code-braces
+      link: https://fabiofurini.github.io/algoritmi/
+      name: Algoritmi
+    - icon: material/hexagon-multiple-outline
+      link: https://fabiofurini.github.io/ottimizzazione-combinatoria/
+      name: Ottimizzazione combinatoria
+    - icon: material/graph-outline
+      link: https://fabiofurini.github.io/ottimizzazione-su-reti/
+      name: Ottimizzazione su reti
+  alternate:
+    - name: Italiano
+      link: https://fabiofurini.github.io/programmazione-dinamica/
+      lang: it
+    - name: English
+      link: https://fabiofurini.github.io/dynamic-programming/
+      lang: en
+
+extra_css:
+  - stylesheets/extra.css?v=a25c6f8414
+  - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
+  - stylesheets/interattivi.css?v=c51ac2286b
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      title: In questa pagina
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/cloudflare-analytics.js?v=bff73345a1
+  - javascripts/mathjax.js?v=2f2f0d6685
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  # grafici interattivi: JSXGraph, il motore, poi le ricette (gi-*.js, le aggiunge genera_sito.py)
+  - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
+  - javascripts/interattivi.js?v=2687ca69e3
+  - javascripts/gi-comune.js?v=40df75e3e5
+  - javascripts/gi-pd-0.js?v=99bf6d9546
+  - javascripts/gi-pd-a.js?v=4449721623
+  - javascripts/gi-pd-b.js?v=7c55f942e6
+
+nav:
+  - Home: index.md
+  - Principi:
+      - principi.md
+      - "1. Principi": dp-principles/index.md
+  - Problemi di zaino:
+      - problemi-di-zaino.md
+      - "2. Zaino 0/1 (KP)":
+          - dp-knapsack/index.md
+          - "Un primo algoritmo di PD": dp-knapsack/un-primo-algoritmo-di-pd.md
+          - "Un primo algoritmo di PD: Un'implementazione con liste": dp-knapsack/un-primo-algoritmo-di-pd-un-implementazione-con-liste.md
+          - "Un secondo algoritmo di PD": dp-knapsack/un-secondo-algoritmo-di-pd.md
+          - "Un secondo algoritmo di PD: Un'implementazione con liste": dp-knapsack/un-secondo-algoritmo-di-pd-un-implementazione-con-liste.md
+          - "Errori tipici · In sintesi": dp-knapsack/errori-tipici.md
+      - "3. Zaino illimitato (UKP)":
+          - dp-unbounded-knapsack/index.md
+          - "Un primo algoritmo di PD": dp-unbounded-knapsack/un-primo-algoritmo-di-pd.md
+          - "Un secondo algoritmo di PD": dp-unbounded-knapsack/un-secondo-algoritmo-di-pd.md
+          - "Errori tipici · In sintesi": dp-unbounded-knapsack/errori-tipici.md
+      - "4. Zaino limitato (BKP)": dp-bounded-knapsack/index.md
+      - "5. Subset sum (SSP)": dp-subset-sum/index.md
+      - "6. Zaino a scelta multipla (MCKP)": dp-multiple-choice-knapsack/index.md
+      - "7. Zaino multidimensionale (MDKP)": dp-multidimensional-knapsack/index.md
+      - "8. Zaino con setup (KPS)": dp-knapsack-setups/index.md
+      - "9. Zaini multipli (MKP)": dp-multiple-knapsack/index.md
+  - Problemi di lot sizing:
+      - problemi-di-lot-sizing.md
+      - "10. Lot sizing senza capacità (ULS)":
+          - dp-lot-sizing/index.md
+          - "Un algoritmo di PD per l'ULS": dp-lot-sizing/un-algoritmo-di-pd-per-l-uls.md
+          - "Un algoritmo di PD per l'ULS: Passo 1 e Passo 2": dp-lot-sizing/un-algoritmo-di-pd-per-l-uls-passo-1-e-passo-2.md
+          - "Errori tipici · In sintesi": dp-lot-sizing/errori-tipici.md
+      - "11. Lot sizing capacitato (CLS)": dp-capacitated-lot-sizing/index.md
+  - Problemi misti:
+      - problemi-misti.md
+      - "12. Cambio monete (CCP)": dp-coin-change/index.md
+      - "13. Taglio delle aste (RCP)":
+          - dp-rod-cutting/index.md
+          - "Un primo algoritmo di PD": dp-rod-cutting/un-primo-algoritmo-di-pd.md
+          - "Un secondo algoritmo di PD": dp-rod-cutting/un-secondo-algoritmo-di-pd.md
+          - "Errori tipici · In sintesi": dp-rod-cutting/errori-tipici.md
+  - Esercizi:
+      - esercizi/index.md
+      - "Principi":
+          - "1. Principi": esercizi/dp-principles.md
+      - "Problemi di zaino":
+          - "2. Zaino 0/1 (KP)": esercizi/dp-knapsack.md
+          - "3. Zaino illimitato (UKP)": esercizi/dp-unbounded-knapsack.md
+          - "4. Zaino limitato (BKP)": esercizi/dp-bounded-knapsack.md
+          - "5. Subset sum (SSP)": esercizi/dp-subset-sum.md
+          - "6. Zaino a scelta multipla (MCKP)": esercizi/dp-multiple-choice-knapsack.md
+          - "7. Zaino multidimensionale (MDKP)": esercizi/dp-multidimensional-knapsack.md
+          - "8. Zaino con setup (KPS)": esercizi/dp-knapsack-setups.md
+          - "9. Zaini multipli (MKP)": esercizi/dp-multiple-knapsack.md
+      - "Problemi di lot sizing":
+          - "10. Lot sizing senza capacità (ULS)": esercizi/dp-lot-sizing.md
+          - "11. Lot sizing capacitato (CLS)": esercizi/dp-capacitated-lot-sizing.md
+      - "Problemi misti":
+          - "12. Cambio monete (CCP)": esercizi/dp-coin-change.md
+          - "13. Taglio delle aste (RCP)": esercizi/dp-rod-cutting.md
+  - Laboratorio: laboratorio/index.md
+  - Materiale: materiale.md
+  - Indice: indice.md
