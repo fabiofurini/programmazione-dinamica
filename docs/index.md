@@ -199,6 +199,14 @@ Dieci corsi con la stessa impostazione: dispense online e in PDF, esercizi con l
 
     principi e algoritmi di PD per zaino, lot sizing, cambio monete e taglio delle aste
 
+-   :material-map-marker-path: **[Algoritmi euristici](https://fabiofurini.github.io/algoritmi-euristici/)**
+
+    euristiche costruttive, ricerca locale, metaeuristiche ed euristiche MIP per i problemi di ottimizzazione combinatoria
+
+-   :material-approximately-equal: **[Algoritmi di approssimazione](https://fabiofurini.github.io/algoritmi-di-approssimazione/)**
+
+    garanzie di prestazione, schemi di approssimazione e limiti dell'approssimazione per i problemi combinatori
+
 -   :material-vector-polygon: **[Modellazione MIP](https://fabiofurini.github.io/modellazione-mip/)**
 
     modelli di programmazione lineare a variabili intere, dalla formulazione alla soluzione con i solver
