@@ -949,7 +949,7 @@ Il problema di questo capitolo è il [problema di lot sizing capacitato (CLS)](h
 
     Se $cap_t=C$ per ogni $t\in T$, esiste una soluzione ottima in cui, fra due periodi consecutivi con scorta vuota, al più un periodo produce una quantità strettamente compresa fra $0$ e $C$; tutti gli altri periodi producono $0$ o $C$.
 
-- Il CLS a capacità costante è nel [catalogo dei problemi](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/#capacitated-lot-sizing-with-constant-capacity), con gli altri problemi di lot sizing.
+- Il CLS a capacità costante è nella [pagina dei problemi](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-scelti/#capacitated-lot-sizing-with-constant-capacity), con gli altri problemi di lot sizing.
 
 - L'<span style="color:#1971c2">[Esempio 11.1](#box-1-texcls1)</span> ha capacità costante $C=4$. La sua soluzione ottima $(3,\allowbreak 0,\allowbreak 4,\allowbreak 4,\allowbreak 0)$ ha scorte $(1,\allowbreak 0,\allowbreak 1,\allowbreak 1,\allowbreak 0)$, vuote alla fine dei periodi $0$, $2$ e $5$.
 
