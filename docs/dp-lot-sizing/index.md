@@ -38,7 +38,7 @@ title: "PD per il problema del lot sizing senza capacità"
 
     - contare i passi dell'algoritmo di PD e mostrare che sono $\Theta(m^2)$.
 
-Il problema di questo capitolo è il [problema di lot sizing senza capacità (ULS)](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/uncapacitated-lot-sizing-problem/): la sua definizione e le sue ipotesi sono nella sua pagina.
+Il problema di questo capitolo è il [problema di lot sizing senza capacità (ULS)](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/lot-sizing/varianti/#box-7-defULS): la sua definizione e le sue ipotesi sono nella sua pagina.
 
 ## 10.1 Notazione, modello e soluzioni ammissibili
 

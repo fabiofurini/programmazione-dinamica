@@ -30,7 +30,7 @@ title: "PD per il problema del subset sum"
 
     - mettere in relazione $r(j,k)$ con l'algoritmo di PD del KP con $p_j=w_j$, e contare i $\Theta(nc)$ passi.
 
-Il problema di questo capitolo è il [problema del subset sum (SSP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/subset-sum-problem/): la sua definizione e le sue ipotesi sono nella sua pagina.
+Il problema di questo capitolo è il [problema del subset sum (SSP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-del-subset-sum/#box-4-defSSP): la sua definizione e le sue ipotesi sono nella sua pagina.
 
 ## 5.1 Un algoritmo di PD
 

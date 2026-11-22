@@ -30,7 +30,7 @@ title: "PD per il problema degli zaini multipli"
 
     - contare i $\Theta(m\,n\prod_{i=1}^{m}(c_i+1))$ passi e spiegare perché il numero di stati cresce esponenzialmente con $m$.
 
-Il problema di questo capitolo è il [problema degli zaini multipli (MKP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/multiple-knapsack-problem/): la sua definizione e le sue ipotesi sono nella sua pagina.
+Il problema di questo capitolo è il [problema degli zaini multipli (MKP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-degli-zaini-multipli/#box-12-defMKP): la sua definizione e le sue ipotesi sono nella sua pagina.
 
 ## 9.1 Un algoritmo di PD
 

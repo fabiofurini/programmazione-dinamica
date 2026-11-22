@@ -30,7 +30,7 @@ title: "PD per il problema dello zaino a scelta multipla"
 
     - contare i $\Theta(nc)$ passi dell'algoritmo di PD.
 
-Il problema di questo capitolo è il [problema dello zaino a scelta multipla (MCKP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/multiple-choice-knapsack-problem/): la sua definizione e le sue ipotesi sono nella sua pagina.
+Il problema di questo capitolo è il [problema dello zaino a scelta multipla (MCKP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-a-scelta-multipla/#box-14-defMCKP): la sua definizione e le sue ipotesi sono nella sua pagina.
 
 ## 6.1 Un algoritmo di PD
 

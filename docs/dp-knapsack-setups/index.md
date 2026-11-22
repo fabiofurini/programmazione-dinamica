@@ -30,7 +30,7 @@ title: "PD per il problema dello zaino con setup"
 
     - contare i $\Theta(nc)$ passi dell'algoritmo di PD.
 
-Il problema di questo capitolo è il [problema dello zaino con setup (KPS)](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/knapsack-problem-with-setups/): la sua definizione e le sue ipotesi sono nella sua pagina.
+Il problema di questo capitolo è il [problema dello zaino con setup (KPS)](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-con-setup/#box-16-defKPS): la sua definizione e le sue ipotesi sono nella sua pagina.
 
 ## 8.1 Un algoritmo di PD
 

@@ -30,7 +30,7 @@ title: "PD per il problema dello zaino multidimensionale"
 
     - contare i $\Theta(m\,n\prod_{d=1}^{m} (c_d+1))$ passi e spiegare perché il numero di stati cresce esponenzialmente con $m$.
 
-Il problema di questo capitolo è il [problema dello zaino multidimensionale (MDKP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/catalogo/multidimensional-knapsack-problem/): la sua definizione e le sue ipotesi sono nella sua pagina.
+Il problema di questo capitolo è il [problema dello zaino multidimensionale (MDKP)](https://fabiofurini.github.io/ottimizzazione-combinatoria/problemi-di-ottimizzazione-combinatoria/knapsack/il-problema-dello-zaino-multidimensionale/#box-10-defMDKP): la sua definizione e le sue ipotesi sono nella sua pagina.
 
 ## 7.1 Un algoritmo di PD
 
