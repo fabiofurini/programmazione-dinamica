@@ -20,9 +20,6 @@ Il corso presenta la programmazione dinamica: i principi del metodo e gli algori
 di zaino (0/1, illimitato, limitato, subset sum, a scelta multipla, multidimensionale, con setup, zaini
 multipli), per il lot sizing senza capacità e capacitato, per il cambio monete e il taglio delle aste.
 
-Ogni capitolo ha ricorrenze, pseudocodice, complessità, tabelle svolte passo per passo, esercizi con le
-soluzioni e app interattive.
-
 Prerequisiti: [Problemi di ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/) per i problemi e [Algoritmi](https://fabiofurini.github.io/algoritmi/) per lo pseudocodice, la ricorsione e l'analisi degli algoritmi.
 
 [Comincia :material-arrow-right:](dp-principles/index.md){ .md-button .md-button--primary }
