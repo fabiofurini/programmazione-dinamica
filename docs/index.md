@@ -16,7 +16,12 @@ hide:
 Materiale didattico ideato e sviluppato da **[Fabio Furini](https://fabiofurini.github.io/)**, professore
 associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
 
-**Le dispense del corso, online**: i principi della programmazione dinamica e gli algoritmi di PD per i problemi di zaino (0/1, illimitato, limitato, subset sum, a scelta multipla, multidimensionale, con setup, zaini multipli), per il lot sizing senza capacità e capacitato, per il cambio monete e il taglio delle aste; con ricorrenze, pseudocodice, complessità, tabelle svolte passo per passo, esercizi con le soluzioni e app interattive.
+Il corso presenta la programmazione dinamica: i principi del metodo e gli algoritmi di PD per i problemi
+di zaino (0/1, illimitato, limitato, subset sum, a scelta multipla, multidimensionale, con setup, zaini
+multipli), per il lot sizing senza capacità e capacitato, per il cambio monete e il taglio delle aste.
+
+Ogni capitolo ha ricorrenze, pseudocodice, complessità, tabelle svolte passo per passo, esercizi con le
+soluzioni e app interattive.
 
 Prerequisiti: [Problemi di ottimizzazione combinatoria](https://fabiofurini.github.io/ottimizzazione-combinatoria/) per i problemi e [Algoritmi](https://fabiofurini.github.io/algoritmi/) per lo pseudocodice, la ricorsione e l'analisi degli algoritmi.
 
