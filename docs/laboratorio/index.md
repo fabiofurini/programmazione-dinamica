@@ -5,8 +5,8 @@ hide:
 
 # Laboratorio interattivo
 
-Qui la programmazione dinamica si tocca con mano: ogni app riempie la tabella di un algoritmo di PD passo per passo sulle istanze
-di riferimento del corso, che si possono anche cambiare. Scegli un'app: si apre a tutta pagina. Tutto gira nel browser; i numeri sono calcolati dall'algoritmo, non scritti a mano.
+Ogni app riempie la tabella di un algoritmo di PD passo per passo sulle istanze
+di riferimento del corso, che si possono anche cambiare. Scegli un'app: si apre a tutta pagina. Tutto gira nel browser.
 
 ## Problemi di zaino
 
